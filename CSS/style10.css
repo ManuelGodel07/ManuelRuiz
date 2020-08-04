@@ -1,0 +1,13 @@
+:root{
+    --yellow-color: #f7df1e;
+    --dark-color: #222;
+}
+body{
+    background: gray;
+}
+table{
+    border: 5px solid black;
+    background: rgb(100, 104, 100);
+    color: black;
+    padding: 16px;
+}

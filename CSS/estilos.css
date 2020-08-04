@@ -1,0 +1,310 @@
+* {
+	box-sizing: border-box;
+	font-family: monospace;
+	font-size: 16px;
+	text-align: justify;
+	margin:0;
+	padding: 0;
+	scroll-behavior: smooth;
+	/**CAJAS**/
+	display: flexbox;
+	flex-flow: row wrap;
+	/**CONTENIDO*/
+	justify-content: space-between;
+	/**EJE SECUNDARIO**/
+	align-items: baseline;
+	/**ELEMENTOS DEL CONTENIDO**/
+	align-content: space-evenly;
+}
+
+body{
+	background-image: linear-gradient( rgb(7, 29, 104),white 40%);
+	/*background: url() position / size repeat attachment origin clip*/
+}
+
+header{ /*CONTENEDOR*/
+	width: 100%;
+	height: 35vh;
+}
+
+.head-box{
+	height: 100%;
+}
+
+.head{
+	background: url(https://image.freepik.com/vector-gratis/lujo-geometrico-abstracto-moderno-azul-oro-s-invitacion-elemento-portada-fondo-decoracion-elegante_64718-206.jpg) center / 100% 100% no-repeat;
+	border-bottom: 2px solid rgb(196, 155, 34);
+	height: 70%;
+	width: 100%;
+	padding: 0;
+}
+.element{
+	height: 30%;
+	width: 100%;
+	background: linear-gradient(45deg, rgb(7, 29, 104),black,rgb(7, 29, 104),rgb(7, 29, 104),black,rgb(7, 29, 104));
+}
+.menu{
+	display: flex;
+	height: 100%;
+	list-style: none;
+	margin: 0;
+}
+
+.menu .menu-link{
+	font-family: sans-serif;
+	font-size: larger;
+	text-decoration: none;
+	color: rgb(177, 173, 173);
+	display: block;
+}
+.menu-link:hover{
+   color: white;
+}
+.menu-item:hover .submenu{
+   display: block;
+}
+.submenu{
+	display: block;
+	position: absolute;
+	display: none;
+	z-index: 2;
+	list-style: none;
+	background: linear-gradient(90deg, rgb(7, 29, 104),rgb(7, 29, 104), rgb(0, 0, 0),rgb(7, 29, 104),rgb(7, 29, 104));
+}
+.logo{
+	width: 100px;
+	height: 100px;
+}
+input.src{
+
+	outline: none;
+	font-size: 1.5em;
+	border-radius: 25px;
+	color: #444;
+	border: 3px solid goldenrod;
+	width: 60px;
+	transition: all .5s;
+}
+
+input.src:hover{
+	width: 180px;
+	background-color: #fff;
+	border: #8c10b3;
+	box-shadow: 0 0 5px #6dcff680;
+}
+
+
+
+
+
+/*------------------------------------------------------------------*/
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+
+.conteiner .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+	flex-direction: row;
+}
+
+.conteiner .contenedor-principal .flecha-izquierda,
+.conteiner .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 1em;
+	height: 100%;
+	line-height: 40px;
+	width: 50px;
+	color:white;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+
+}
+
+.conteiner .contenedor-principal .flecha-izquierda:hover,
+.conteiner .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.conteiner .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.conteiner .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.conteiner .contenedor-carousel {
+	width: 100%;
+	height: 40vh;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.conteiner .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+}
+
+.conteiner .contenedor-carousel .carousel .pic {
+	min-width: 20%;
+	align-items: stretch;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.conteiner .contenedor-carousel .carousel .pic:hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.conteiner .contenedor-carousel .carousel .pic img {
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
+}
+
+/*---- ----- ----- Media Queries ----- ----- -----*/
+@media screen and (max-width: 800px) {
+	.conteiner .contenedor-carousel .carousel .pic {
+		min-width: 40%;
+		min-height: 100%;
+		transition: .3s ease all;
+		box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+	}
+
+}
+.art{
+	padding: 0px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+.video{
+	width: 50vw;
+	height: 50vh;
+}
+
+.intel{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	text-decoration: none;	
+	padding: 10px;
+	height: 50vh;
+	align-items: center;
+}
+.brother{
+	width: 20%;
+	height: 90%;
+	background: url(https://image.freepik.com/foto-gratis/acuarela-grunge-pintada-superficie-texturizada_23-2148118078.jpg) center / cover no-repeat;
+	border-radius: 15px;
+}
+
+.brother:hover {
+	transform: scale(0.9);
+	transform-origin: center;
+	transition: 0.5s ease-out;
+}
+.geo{
+	background-image: url(https://image.flaticon.com/icons/svg/3159/3159280.svg);
+	border: 3px solid black;
+}
+.ad{
+	background: url(https://image.flaticon.com/icons/svg/3065/3065012.svg) center / cover no-repeat;
+	border: 3px solid black;
+}
+.act{
+	background: url(https://image.flaticon.com/icons/svg/3063/3063198.svg) center / cover no-repeat;
+	border: 3px solid black;
+}
+
+.know{
+	background: url(https://image.flaticon.com/icons/svg/3081/3081720.svg) center / cover no-repeat;
+	border: 3px solid black;
+}
+
+
+
+
+
+.contact{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: space-around;
+	padding: 0;
+}
+.contact-table1{
+	border: 3px solid black;
+	padding: 5%;
+	border-radius: 25px;
+	text-align: left;
+	line-height: 1rem;
+	white-space: pre-line;
+
+}
+.contact-table2{
+	border: 3px solid black;
+	padding: 5%;
+	border-radius:25px;
+	text-align: left;
+	line-height: 1rem;
+	white-space: pre-line;
+
+}
+[type="submit"]{
+	background: rgb(139, 204, 227);
+	color:black}
+.aumentar{
+	font:icon;
+	text-decoration: none;
+	margin:1em; 
+}
+.farewell{
+	border:3px solid black;		
+	color: whitesmoke;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	flex-flow: row wrap;
+	height: 200px;
+	justify-content: space-around;
+	background: linear-gradient( 45deg,rgb(9, 46, 146) 50%, rgb(234, 184, 27 ) 50%);
+
+}
+.final-botton1{
+	height: 20%;
+	text-decoration: none;
+}
+.final-botton2{
+	height: 80%;
+	background: linear-gradient(45deg, rgb(7, 29, 104),black,rgb(7, 29, 104),rgb(7, 29, 104),black,rgb(7, 29, 104));
+	text-align: center;
+	line-height: 2rem;
+	text-align-last: center;
+	scroll-behavior: smooth;
+}
+
+
+
+/*
+	[href$=".jpg"]{
+		color:black;
+		background: 
+		padding-top: 6rem;
+	}
+*/

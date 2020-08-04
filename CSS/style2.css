@@ -1,0 +1,147 @@
+*{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0px;
+	font-family: comic sans;
+}
+.heads{
+	height: 200px;
+ 	background-clip: content-box; 
+	margin: 0px;
+	border: 0px;
+	border-bottom: 5px solid red;	
+	padding: 1rem;
+	background: url(https://images.vexels.com/media/users/3/75939/preview2/bf7b4aaee813602cd6a34fd4df45d62c-fondo-de-vector-azul-y-oro.jpg) center / 1350px 300px no-repeat;
+	color: rgb(248, 246, 191 );
+	text-align: justify-all;
+	font-size: 1rem;
+
+}
+main{
+	padding: 10px;
+}
+a{
+	text-decoration: none;
+}
+
+.main{
+	height: 30em;
+	margin: 0px;
+	border: 0px solid yellow; 
+	background: black;
+	color: rgb(250, 167, 32);
+}
+.navegation{
+	background: rgb(15, 33, 84);
+	color: white;
+	height: 2em;
+	padding: 10px;
+
+}
+
+.modal{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(201, 209, 220, .5);
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.modal:target{
+	display: flex;
+}
+.modal form{
+	display: flex;
+	flex-direction: column;
+}
+.modal input:not([type="submit"]){
+	margin-bottom: .5rem;
+	padding: .5rem;
+	border:thin solid black;
+	background-color: white;
+	color:yellow;
+}
+.modal input[type="submit"]{
+	width: 50%;
+	margin: 0 auto .5rem;
+	padding: .5rem .25rem;
+	border: 0;
+	border-radius: .25rem;
+	background-color: rgb(83, 196, 241);
+	color: white;
+	transition: all .3s ease-in;
+}
+.modal input[type="submit"]:hover{
+	background-color: blue;
+}
+.modal-box{
+	width: 50%;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color: rgba(201, 209, 220, .5);
+}
+*/
+/*Cuando aun no la visitas*/
+a:link{
+	color:green;
+
+}
+/*Cuando ya la visitaste*/
+a:visited{
+	color:black;
+}
+a:hover{
+	background-color: yellow;
+	color: black;
+
+}
+.caption1{
+	padding: 5px;
+}
+.caption1:hover{
+	background-color: rgb(250, 167, 32); 
+	color: black;
+	transition: all .5s ease-out;
+}
+.caption1:active{
+	background-color: rgb(26, 110, 238); 
+	color: white;
+	transition: all 0s ease-out;
+}
+.caption2{
+	padding: 5px;
+}
+.caption2:hover{
+	background-color: rgb(250, 167, 32); 
+	color: black;
+	transition: all.5s ease-out;
+}
+.caption2:active{
+	background-color: rgb(26, 110, 238); 
+	color: white;
+	transition: all 0s ease-out;
+}
+.caption3{
+	padding: 5px;
+}
+.caption3:hover{
+	background-color: rgb(250, 167, 32); 
+	color: black;
+	transition: all.5s ease-out;
+}
+.caption3:active{
+	background-color: rgb(26, 110, 238); 
+	color: white;
+	transition: all 0s ease-out;
+}
+input:focus{
+	background-color: rgb(254, 252, 212); 
+	color:black;
+}

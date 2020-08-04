@@ -1,0 +1,48 @@
+/*Esta es la hoa de estilos, hay dominar selectores, especificidad, herencia y cascada*/
+/* *{}ESTE ES UN SELECTOR UNIVERSAL */
+:root{
+	--color: rgb(51, 56, 65);
+}
+
+body{
+	background-image: linear-gradient(blue, white,blue); 
+	background-image: linear-gradient(45deg, purple, blue); 
+	color: black;
+	margin: 0px;
+	padding: 0px;
+	min-height: 100vh;
+}
+h3{
+	background: grey;
+	border: 2px solid	black;
+}
+
+.title{
+	background: black;
+	color: red;
+	margin: 0px;
+	font-size: 4.5rem;
+	margin: 10;
+}
+.clasic{
+	position: relative;
+	background-color: white;
+	float: left;
+	width: 50%;
+}
+.bayesiana{
+	position: relative;
+	background-color: white;
+	float: right;
+	width: 50%;
+}
+.description{ 
+	color: black;
+	margin: 5px solid red;
+	font-size: 1rem;
+	background-color: yellow;
+}
+}
+dialog:hover{
+	display: none;
+}

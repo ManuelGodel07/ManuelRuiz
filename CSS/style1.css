@@ -1,0 +1,37 @@
+:root{
+    --yellow-color: #F7DF1E;
+    --dark-color: black;
+}
+.cards{
+    border: thin solid black;
+    padding: 1rem;
+}
+.card{
+    display: inline-block;
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+.card figcaption{
+    padding: 1rem;
+}
+.rotate-45{
+    transform: rotate(45deg);
+}
+.rotate-135{
+    transform: rotate(135deg);
+}
+.opacity-80{
+    opacity: .8;
+}
+.sepia{
+    filter: sepia(1);
+}
+
+.link-dom{
+    background: chartreuse;
+    color: darkblue;
+}
+
+h3{
+    width: 2000px;
+}
