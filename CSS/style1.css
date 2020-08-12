@@ -14,16 +14,14 @@
     align-items: baseline;
     align-content: space-evenly;
 }
-.cards{
+section {
     border: thin solid black;
     padding: 1rem;
-    display: flexbox;
+    display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
 }
 .card{
-    border: solid red 4px;
     width: 200px;
     margin: 0;
 }
