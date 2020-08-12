@@ -1,6 +1,4 @@
 :root{
-    --yellow-color: #F7DF1E;
-    --dark-color: black;
     box-sizing: border-box;
     font-family: monospace;
     font-size: 16px;
@@ -31,8 +29,8 @@
 .card figcaption{
 
     border:0;
-    background-color: var(--dark-color);
-    color: var(--yellow-color);
+    background-color:whitesmoke;
+    color: black;
 }
 
 img{
