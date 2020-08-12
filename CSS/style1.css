@@ -23,15 +23,14 @@
 
 }
 .card{
-    margin: 0;
-    height: 200px;
-    width: 200px;
     border: solid red 4px;
+    width: 200px;
+    margin: 0;
 }
 
 .card figcaption{
 
-
+    border:0;
     padding: 0rem;
     background-color: var(--dark-color);
     color: var(--yellow-color);
