@@ -31,13 +31,11 @@
 .card figcaption{
 
     border:0;
-    padding: 0rem;
     background-color: var(--dark-color);
     color: var(--yellow-color);
 }
 
 img{
-    height: 100%;
     width: 100%;
 }
 
