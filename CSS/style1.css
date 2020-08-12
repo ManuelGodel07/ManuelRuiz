@@ -14,12 +14,12 @@
     align-items: baseline;
     align-content: space-evenly;
 }
-section {
-    border: thin solid black;
-    padding: 1rem;
+.cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    border: thin solid green;
+    padding: 1rem;
 }
 .card{
     width: 200px;
