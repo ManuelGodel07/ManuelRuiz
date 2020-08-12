@@ -17,9 +17,12 @@
 .cards{
     border: thin solid black;
     padding: 1rem;
+    display: flexbox;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
 }
 .card{
-    display: inline-block;
     background-color: var(--dark-color);
     color: var(--yellow-color);
     height: 40px;
