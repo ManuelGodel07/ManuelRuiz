@@ -22,7 +22,9 @@
     justify-content: space-between;
 
 }
-
+.card{
+    border: 0;
+}
 
 .card figcaption{
     height: 200px;
