@@ -27,6 +27,8 @@
     color: var(--yellow-color);
     height: 100%;
     width: 100%;
+    border: solid black 4px;
+
 }
 .card figcaption{
     padding: 1rem;
