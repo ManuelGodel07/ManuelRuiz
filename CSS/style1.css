@@ -23,16 +23,17 @@
 
 }
 
-
+figure{
+    height: 200px;
+    width: 200px
+}
 .card figcaption{
     background-color: var(--dark-color);
     color: var(--yellow-color);
     padding: 1rem;
 }
 .card img{
-    height: 200px;
-    width: 200px;
-    border: solid black 4px;
+    border: solid red 4px;
 }
 .rotate-45{
     transform: rotate(45deg);
