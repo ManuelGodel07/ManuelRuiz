@@ -31,10 +31,12 @@ figure{
     background-color: var(--dark-color);
     color: var(--yellow-color);
     padding: 1rem;
-}
-.card img{
     border: solid red 4px;
 }
+
+
+
+
 .rotate-45{
     transform: rotate(45deg);
 }
