@@ -22,12 +22,17 @@
     justify-content: space-between;
 
 }
-.card{
+
+
+.card figcaption{
     background-color: var(--dark-color);
     color: var(--yellow-color);
-}
-.card figcaption{
     padding: 1rem;
+}
+.card img{
+    height: 200px;
+    width: 200px;
+    border: solid black 4px;
 }
 .rotate-45{
     transform: rotate(45deg);
