@@ -23,7 +23,9 @@
 }
 .card{
     width: 200px;
+    height: 250px;
     margin: 0;
+    text-align: center;
 }
 
 .card figcaption{
