@@ -22,8 +22,8 @@
     display: inline-block;
     background-color: var(--dark-color);
     color: var(--yellow-color);
-    height: 20vh;
-    width: 40px;
+    height: 40px;
+    width: 20%;
 }
 .card figcaption{
     padding: 1rem;
@@ -39,9 +39,4 @@
 }
 .sepia{
     filter: sepia(1);
-}
-
-.link-dom{
-    background: chartreuse;
-    color: darkblue;
 }
