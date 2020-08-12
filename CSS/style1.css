@@ -25,7 +25,7 @@
 
 figure{
     height: 200px;
-    width: 200px
+    width: 200px;
 }
 .card figcaption{
     background-color: var(--dark-color);
