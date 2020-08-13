@@ -1,0 +1,22 @@
+body{
+    background:url(../images/winner.png) center /100% 100% no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.modal:target{
+	display: flex;
+}
+.modal form{
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-box{
+	width: 50vw;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color: rgba(201, 209, 220, .5);
+}
