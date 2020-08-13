@@ -4,9 +4,9 @@ var y= parseInt(document.getElementById("num2").value);
 function limpiar(){
 	document.getElementById("formulario").reset();
 }
-
+function sumar(){
 document.getElementById('result').innerHTML = x+y;
-
+}
 
 
 
