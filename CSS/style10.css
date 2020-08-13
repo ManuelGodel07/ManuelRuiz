@@ -3,7 +3,7 @@
     --dark-color: #222;
 }
 body{
-    background: gray;
+    background: url(../images/work.png);
 }
 table{
     border: 5px solid black;
