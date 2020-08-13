@@ -14,7 +14,8 @@
 }
 body{
     background: url(../images/work.png) center / cover no-repeat;
-    height: 100vh;}
+    height: 100vh;
+}
 table{
     border: 5px solid black;
     background: rgb(100, 104, 100);
