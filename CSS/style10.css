@@ -1,11 +1,19 @@
-:root{
-    --yellow-color: #f7df1e;
-    --dark-color: #222;
+*{
+	box-sizing: border-box;
+	font-family: monospace;
+	font-size: 16px;
+	text-align: justify;
+	margin:0;
+	padding: 0;
+	scroll-behavior: smooth;
+	display: flexbox;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	align-content: space-evenly;
 }
 body{
     background: url(../images/work.png) center / cover no-repeat;
-    width: 100%;
-    height: 100%;
 }
 table{
     border: 5px solid black;
