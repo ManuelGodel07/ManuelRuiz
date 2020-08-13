@@ -17,8 +17,10 @@ body{
     height: 100vh;
 }
 table{
-    border: 5px solid black;
-    background: rgb(100, 104, 100);
+    border: 4px solid black;
     color: black;
     padding: 16px;
+}
+td{
+    border: 1px solid gray;
 }
