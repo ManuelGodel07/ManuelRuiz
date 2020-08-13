@@ -4,6 +4,8 @@
 }
 body{
     background: url(../images/work.png);
+    width: 100vw;
+    height: 100vh;
 }
 table{
     border: 5px solid black;
