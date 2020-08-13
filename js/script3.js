@@ -1,3 +1,7 @@
+var x= parseInt(document.getElementById("num1").value);
+var y= parseInt(document.getElementById("num2").value);
+
+alert(x+y);
 function limpiar(){
 	document.getElementById("formulario").reset();
 }
