@@ -5,7 +5,7 @@ function limpiar(){
 	document.getElementById("formulario").reset();
 }
 function sumar(){
-document.getElementById('result').innerHTML = x+y;
+document.getElementById('result').innerHTML = "Hola mundo";
 }
 
 
