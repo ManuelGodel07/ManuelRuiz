@@ -104,14 +104,12 @@ input.src:hover{
 }
 
 /* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
-
 .conteiner .contenedor-principal {
 	display: flex;
 	align-items: center;
 	position: relative;
 	flex-direction: row;
 }
-
 .conteiner .contenedor-principal .flecha-izquierda,
 .conteiner .contenedor-principal .flecha-derecha {
 	position: absolute;
