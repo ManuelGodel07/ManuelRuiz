@@ -6,17 +6,16 @@
     margin:0;
     padding: 0;
     scroll-behavior: smooth;
-    display: flexbox;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: baseline;
-    align-content: space-evenly;
 }
 .cards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    align-self: flex-end;
     border: thin solid green;
+
     padding: 1rem;
 }
 .card{
