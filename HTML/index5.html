@@ -4,43 +4,54 @@
 		<title>Psicologia</title>
 			<!--METADATOS-->
 		<meta charset="utf-8">
-		<meta name="viewport" content="Prueba">
+		<meta http-equiv="X-UA-Compatible" content="IE-Chrome-1">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0 minimum-scale=1.0 shrink-to-fit=no">
+		<meta description= "Psicologia">
 		<link rel="stylesheet" type="text/css" href="../CSS/style2.css">
-		<script src="../js/script5.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="shortcut icon" href="../favicon/man.ico">
+
 	</head>
-	<body>
+	<body class="d-flex flex-column justify-content-start">
 		<div class="heads">
 			<header>
 				<h1>Psicologia Laboral</h1>
-				<p>La función del <em>Psicologo</em> es identificar las necesidades de capacitación y desarrollo de una empresa; diseñar y optimizar la calidad de vida laboral; evaluar la eficacia de los programas formativos, desarrollar baterías para evaluar el desempeño tanto de los individuos como de las propias organizaciones.</p>
+				<p>La función del <em>Psicologo</em> en el area de recursos humanos es identificar y solucionar las diferentes necesidades de desarrollo de una empresa en cuanto a personal, practicas reguladas por la ley, filtros de seguridad asi como diseñar y optimizar la calidad de vida en el trabajo, evaluar la eficacia de los programas formativos y evaluar,retroalimentar y capacitar el desempeño de los individuos.</p>
 			</header>
 		</div>	
-		<div class="main">
+
+
+		<div class="mnu">
 			<nav class="navegation">
-				<ul id="indicecps">
-					<li><a href="#Capitulo1">Recursos Humanos</a></li>
-					<li><a href="#Capitulo2">Marketing e investigación Social y Comercial</a></li>
-					<li><a href="#Capitulo3">Seguridad e Higiene en el trabajo</a></li>
+				<ul class="d-flex flex-row justify-content-around align-items-stretch lista">
+					<li><a href="#Ident1" class="text-decoration-none text-warning">Recursos Humanos</a></li>
+					<li><a href="#Ident2" class="text-decoration-none text-warning">Marketing e investigación Social y Comercial</a></li>
+					<li><a href="#Ident3" class="text-decoration-none text-warning">Seguridad e Higiene en el trabajo</a></li>
 				</ul>		
 			</nav>
+
 			<main>
-					<article id="Capitulo1" class="caption1">
+					<article id="Ident1" class="caption1">
 						<h2>Recursos Humanos</h2>
 						<p>En la administración de empresas, se denomina recursos humanos al conjunto de los empleados o colaboradores de una organización, sector económico o de una economía completa.</p>	
 					</article>
-					<article id="Capitulo2" class="caption2">
+					<article id="Ident2" class="caption2">
 						<h3>Marketing e investigación Social y Comercial</h3>
 							<p>El marketing es el estudio y la gestión de las relaciones de intercambio. Es el proceso comercial de identificar, anticipar y satisfacer las necesidades y deseos de los clientes.</p>
 					</article>
-					<article id="Capitulo3" class="caption3">
+					<article id="Ident3" class="caption3">
 						<h4>seguridad e higiene en el trabajo</h4>
 							<p>La seguridad y salud laboral o salud y seguridad laboral es un proceso interdisciplinario originado como un subsistema de la Administración de Recursos Humanos debido a las relaciones de trabajo entre el empleado y patron.</p>
 					</article>
 			</main>
 		</div>
-		<p>
-		<a href="#modal">Aviso de Privacidad</a>
-		</p>
+
+
+
+
+		<p class="wow"><a href="#modal" class="text-decoration-none" >Aviso de Privacidad</a></p>
+		
+		
 		<div id="modal" class="modal">
 			<aside class="modal-box">
 				<h2>Hola, ¿te gustaria recibir más información?</h2>
@@ -52,21 +63,18 @@
 				<a href="#">cerrar</a>
 			</aside>			
 		</div>
-		<div class="contact">
+		
+		
+		<div class="#">
 			<label>
 				<p>Contacto</p>
 				Ingrese su correo
-				<input type="email">
-				<input id="password" type="password" name="password" required>
-				Tu fecha de nacimiento
-				<input type="date">
+				<input type="email" placeholder="correo@ejemplo.com">
+				<button>Enviar</button>
 			</label>
-			<button>Enviar</button>
-		</div>
-		<div class="multimedia">
-			<title>Multimedia</title>
-				<video src="" controls autoplay></video>
-		</div>
-	</body>
 
-	</html>		
+		</div>
+
+	<!----	<script src="../js/script5.js"></script>-->
+	</body>
+</html>		

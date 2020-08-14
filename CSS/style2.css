@@ -10,35 +10,52 @@ body{
  	background-clip: content-box; 
 	margin: 0px;
 	border: 0px;
-	border-bottom: 5px solid red;	
 	padding: 1rem;
 	background: url(https://images.vexels.com/media/users/3/75939/preview2/bf7b4aaee813602cd6a34fd4df45d62c-fondo-de-vector-azul-y-oro.jpg) center / 1350px 300px no-repeat;
 	color: rgb(248, 246, 191 );
 	text-align: justify-all;
 	font-size: 1rem;
-
 }
+.mnu{
+	margin: 0px;
+	background: black;
+	
+}
+
+.navegation{
+	padding: 0;
+}
+.lista{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+text-decoration: none;
+}
+.list{
+	background-color: black;
+	color:yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 main{
 	padding: 10px;
-}
-a{
-	text-decoration: none;
-}
-
-.main{
-	height: 30em;
-	margin: 0px;
-	border: 0px solid yellow; 
-	background: black;
 	color: rgb(250, 167, 32);
-}
-.navegation{
-	background: rgb(15, 33, 84);
-	color: white;
-	height: 2em;
-	padding: 10px;
 
 }
+
+
+
 
 .modal{
 	position: absolute;
@@ -46,11 +63,13 @@ a{
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background-color: rgba(201, 209, 220, .5);
 	justify-content: center;
 	align-items: center;
 	display: none;
+	border: solid palevioletred 3px;
+
 }
+
 .modal:target{
 	display: flex;
 }
@@ -59,8 +78,6 @@ a{
 	flex-direction: column;
 }
 .modal input:not([type="submit"]){
-	margin-bottom: .5rem;
-	padding: .5rem;
 	border:thin solid black;
 	background-color: white;
 	color:yellow;
@@ -87,20 +104,9 @@ a{
 	align-items:center;
 	background-color: rgba(201, 209, 220, .5);
 }
-*/
-/*Cuando aun no la visitas*/
-a:link{
-	color:green;
 
-}
-/*Cuando ya la visitaste*/
-a:visited{
-	color:black;
-}
 a:hover{
-	background-color: yellow;
-	color: black;
-
+	color: gold;
 }
 .caption1{
 	padding: 5px;
@@ -144,4 +150,8 @@ a:hover{
 input:focus{
 	background-color: rgb(254, 252, 212); 
 	color:black;
+}
+
+.wow{
+	margin: 0;
 }
