@@ -116,21 +116,13 @@ input.src:hover{
 .conteiner .contenedor-principal .flecha-derecha {
 	position: absolute;
 	border: none;
-	background: rgba(0,0,0,0.3);
-	font-size: 1em;
-	height: 100%;
+	height: 20%;
 	line-height: 40px;
 	width: 50px;
-	color:white;
 	cursor: pointer;
 	z-index: 500;
 	transition: .2s ease all;
 
-}
-
-.conteiner .contenedor-principal .flecha-izquierda:hover,
-.conteiner .contenedor-principal .flecha-derecha:hover {
-	background: rgba(0,0,0, .9);
 }
 
 .conteiner .contenedor-principal .flecha-izquierda {
