@@ -6,14 +6,10 @@
 	margin:0;
 	padding: 0;
 	scroll-behavior: smooth;
-	/**CAJAS**/
 	display: flexbox;
 	flex-flow: row wrap;
-	/**CONTENIDO*/
 	justify-content: space-between;
-	/**EJE SECUNDARIO**/
 	align-items: baseline;
-	/**ELEMENTOS DEL CONTENIDO**/
 	align-content: space-evenly;
 }
 
