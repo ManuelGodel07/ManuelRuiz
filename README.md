@@ -1,3 +1,3 @@
 # ManuelRuiz
-CV Manuel Ruiz 2020
+CV Manuel Ruiz
 Esta es una prueba 2020
