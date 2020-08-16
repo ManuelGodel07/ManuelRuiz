@@ -16,11 +16,39 @@ section{
     width: 70vw;
 }
 
+.modal-fiesta:target{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
 
+}
+.modal-box-fiesta{
+	width: 90vw;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color: rgba(237, 237, 238, 0.63);
+}
 
+.modal-diseño:target{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
 
-
-
+}
+.modal-box-diseño{
+	width: 90vw;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color: rgba(237, 237, 238, 0.63);
+}
 
 .modal:target{
 	display: flex;
@@ -30,8 +58,8 @@ section{
 
 }
 .modal-box{
-	width: 80vw;
-	height: 80vh;
+	width: 90vw;
+	height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
