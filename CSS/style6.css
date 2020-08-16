@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+    font-size: 16px;
+}
+body{
+    background: url("../images/creative.png") center / 100% 100% no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+section{
+    width: 70vw;
+}
+
+
+
+
+
+
+
+.modal:target{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+
+}
+.modal-box{
+	width: 80vw;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color: rgba(237, 237, 238, 0.63);
+}
