@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="../favicon/man.ico">
     </head>
     <body>
-        <h1>Hola Mundo</h1>
+        <h1>Hola Mundo, que cositas :3</h1>
         <?php
             include("conexion.php")
         ?>   
