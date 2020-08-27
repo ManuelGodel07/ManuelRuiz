@@ -160,6 +160,8 @@ input.src:hover{
 	width: 100%;
 	overflow: hidden;
 	scroll-behavior: smooth;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .conteiner .contenedor-carousel .carousel {
@@ -309,7 +311,7 @@ input.src:hover{
 		height: 20em;
 	}
 	.logo{
-		width: 17em;
+		width: 9em;
 		height: 9em;
 	}
 	.head-box{
@@ -319,7 +321,6 @@ input.src:hover{
 		height: 50%;
 		font-size: 2em;
 	}
-
 }
 
 
@@ -330,12 +331,8 @@ input.src:hover{
 		height: 24em;
 		font-size: 0.7em;
 	}
-	.logo{
-		width: 15em;
-		height: 7em;
-	}
-	input.src{
-		width: 25vw;
+	.tex{
+		font-size: 1.3em;
 	}
 	.conteiner .contenedor-principal {
 		align-items: center;
@@ -352,54 +349,35 @@ input.src:hover{
 		justify-content: space-between;
 		align-items: center;
 	}
-	.intel{
-		height: 13em;
-		margin:0;
-		padding: 0;
-	}
-	.multimedia{
-		height: 60%;
-		width: 100%;
-	}
-	
-	.multimedia iframe{
-		height: 100%;
-		width: 100%;
-	}
-	.text1{
-		height: 40%;
-		width: 80%;
-		font-size: 1.5em;
-	}
-	.contact-table{
+
+	.contact-table1{
+		padding: 1em;
 		font-size: 1.2em;
-		}
-	.contact .contact-table h1{
-		font-size: 2em;
 	}
+	.contact-table1 p , .contact-table1 .h4{
+		border: 0;
+		margin: 0;
+	}
+
 }
 /***********************************************************************************************/
 
 @media screen and (max-width: 48em) {
 	header{
-		height: 18em;
+		height: 20em;
 	}
-	.element{
-		font-size: 2.5em;
-	}
-
-	.head-box .logo{
-		width: 15em;
+	.logo{
+		width: 8em;
 		height: 8em;
 	}
-
-	input.src{
-		width: 25vw;
-		height: 1em;
+	.element{
+		font-size: 2em;
 	}
-
-	.menu-item .menu-link{
-		font-size: .8em;
+	.menu-link{
+		font-size: 2em;
+	}
+	.submenu{
+		position: absolute;
 	}
 	.conteiner .contenedor-principal {
 		align-items: center;
@@ -408,7 +386,17 @@ input.src:hover{
 	.conteiner .contenedor-carousel{
 		height: inherit;
 	}
-	
+	.text{
+		height: 30%;
+		width: 70%;
+	}
+	.tex{
+		font-size: 1.3em;
+	}
+	.video{
+		width: 100%;
+		height: 70%;
+	}
 	.contact, .contact-table{
 		padding: 0;
 	}
@@ -433,21 +421,30 @@ input.src:hover{
 	.contact .contact-table h1{
 		font-size: 2em;
 	}
-	.final-botton1, .final-botton2{
-		font-size: 1em;
+	input[type=text]{
+		width: 9em;
+	}
+	input[type=email]{
+		width: 9em;
+	}
+	input[type=password]{
+		width: 9em;
+	}
+	.final-botton2{
+		font-size: .8em;
 	}
 }
 /***********************************************************************************************/
 @media screen and (max-width: 37.5em) {
 	.head-box .logo{
-		width: 12em;
+		width: 7em;
 		height: 7em;
 	}
 	header{
-		height: 18em;
+		height: 15em;
 	}
 	.element{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 
 
@@ -462,81 +459,91 @@ input.src:hover{
 		font-size: 1.3em;
 	}
 	.intel{
-		height: 10em;
+		height: 17em;
 	}
-	.tables .Marcas .brother-1{
-		width: 100px;
-		height: 100px;
-		margin: 5px;
+	.brother {
+		width: 40%;
+		height: 40%;
+		border-radius: 15px;
 	}
-	.tables h4{
-		font-size: 1.3em;
+	.contact-table1{
+		font-size:1em;
 	}
-	.tables p{
-		font-size: 1.1em;
+	input[type=text]{
+		width: 7em;
 	}
-	.contact-table{
-		font-size: 1em;
-	
-		}
-	.contact .contact-table h1{
-		font-size: 1.5em;
+	input[type=email]{
+		width: 7em;
 	}
-	.final-botton1, .final-botton2{
-		font-size: 1em;
+	input[type=password]{
+		width: 7em;
 	}
 }
 /***********************************************************************************************/
 @media screen and (max-width: 30em) {
 	header{
-		height: 12em;
+		height: 14em;
+	}
+	.head-box{
+		height: 60%;
 	}
 	.head-box .logo{
-		width: 9em;
-		height: 5em;
+		width: 6em;
+		height: 7em;
 	}
 	.element{
-		font-size: 1.5em;
+		height: 40%;
+		font-size: 1em;
 	}
 
-	.conteiner .indicadores{
-		font-size: 1.5em;
-	}
 	.conteiner .contenedor-principal {
 		align-items: center;
-		height: 8em;
+		height: 4em;
 	}
 	.conteiner .contenedor-carousel{
 		height: inherit;
 	}
+	.conteiner .contenedor-principal .flecha-izquierda,
+	.conteiner .contenedor-principal .flecha-derecha {
+		height: 40%;
+		width: 10%;
+	}
+	.conteiner .contenedor-principal .flecha-izquierda:hover,
+	.conteiner .contenedor-principal .flecha-derecha:hover {
+		height: 50%;
+		width: 10%;
+	}
+
 	.contened .text1{
-		font-size: 1em;
+		font-size: 2em;
 	}
-	.intel{
-		height: 15em;
+	.tex{
+		font-size: .6em;
 	}
-
-	.brother{
-		width: 100px;
-		height: 100px;
-		margin: 5px;
-		padding: 0;
+	.text-c{
+		font-size: .6em;
 	}
-	.brother-1{
-		width: 1em;
-		height: 1em;
-		margin: .5em;
+	.contact{
+		font-size: .5em;
 	}
-	.contact-table{
-		font-size: 0.9em;	
-		}
-	.contact .contact-table h1{
-		font-size: 1.1em;
+	.contact .h4{
+		font-size: 1.4em;
 	}
-	.final-botton1, .final-botton2{
-		font-size: 1em;
+	.contact .contact-table2 h5{
+		font-size: 1.4em;
 	}
-
+	input[type=text]{
+		width: 7em;
+		height: 2em;
+	}
+	input[type=email]{
+		width: 7em;
+		height: 2em;
+	}
+	input[type=password]{
+		width: 8em;
+		height: 2em;
+	}
 }
 
 @media screen and (max-width: 20em) {
