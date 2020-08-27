@@ -9,20 +9,22 @@
 		<meta name="keywords" content="CV Desarrollo Web Digitalización">
 		<link rel="stylesheet" type="text/css" href="CSS\estilos.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<link rel="shortcut icon" href="favicon\man.ico">
-
 		<title>Manuel Ruiz</title>
+		<link rel="shortcut icon" href="favicon\man.ico">
 	</head>
 	<body>
-		<header class="d-flex flex-wrap flex-column justify-content-center">
-			<section class="head d-flex flex-wrap flex-row justify-content-around p-0 align-items-center">
+
+
+		<header>
+			<section class="head-box">
 				<div><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Escudo-UNAM-escalable.svg/1200px-Escudo-UNAM-escalable.svg.png" alt="Fac. de Ciencias"></div>
-				<div class="search"><input type="text" name="search" placeholder="Busqueda" id="#" class="src" autocomplete="off"></div>
-				<div><img class="logo"  src="images\man.png" alt="MR"></div>
+				<div><input type="text" name="search" placeholder="Busqueda" id="#" class="src" autocomplete="off"></div>
+				<div><img src="images\man.png" class="logo" alt="MR"></div>
 			</section>
+
 			<nav class="element">
 				<ul class="menu .align-content-center">
-					<li><a class=" menu-link text-center text-wrap" href="HTML\index2.html">¿Quien Soy?</a></li>
+					<li><a class=" menu-link" href="HTML\index2.html">¿Quien Soy?</a></li>
 					<li><a class="menu-link" href="HTML\index9.html">Proyectos realizados</a></li>
 					<li class="menu-item">
 						<a class="menu-link" href="#">Areas de interes</a>
@@ -37,13 +39,13 @@
 					<li><a target="_blank" class="menu-link" href="https://api.whatsapp.com/send?phone=525540145714&text=Hola%20Manuel,%20me%20pareci%C3%B3%20asombrosa%20tu%20paguina">Contacto</a></li>
 				</ul>
 			</nav>
+
+
 		</header>
 
 		<!---------------------------------------------------------------------------------------->
-		<div class="conteiner contenedor h3 text-capitalize text-dark">
-			<h3 class="indicadores">Sitios RECOMENDADOS</h3>
-
-
+		<div class="conteiner">
+			<h3 class="titulo">Sitios Recomendados</h3>
 			<div class="contenedor-principal">
 				<button role="button" id="flecha-izquierda"  class="flecha-izquierda carousel-control-prev-icon" aria-hidden="true"><!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>--></button>
 				<div class="contenedor-carousel">
@@ -91,11 +93,13 @@
 		</div>
 	<!---------------------------------------------------------------------------------------->
 		<div class="art">
-			<article class="text-xl-left">Un matematico que no es en algún sentido un poeta nunca será un matematico completo.</article>
-			<cite>Karl Weierstrass</cite>
-			<div>
+			<div class= "text">
+				<article class="h4">Un matematico que no es en algún sentido un poeta nunca será un matematico completo.</article>
+				<cite class="h5">Karl Weierstrass</cite>
+			</div>
+			<div class="video">
 				<title>Multimedia</title>
-				<iframe class="video" src="https://www.youtube.com/embed/2LaiBsm4DVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="vid" src="https://www.youtube.com/embed/2LaiBsm4DVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
 			</div>
 		</div>
 
@@ -104,9 +108,9 @@
 
 		<div class="intel">
 			<div class="brother geo"><a href="HTML\index11.html"><img src="https://image.flaticon.com/icons/svg/3159/3159280.svg" class="img-fluid" alt="Geolocalización"></a></div>
-			<article class="brother act">Covid</article>
-			<article class="brother ad">Publicidad</article>
-			<article class="brother know" itemscope itemtype="https://schema.org/NewsArticle"><a href="HTML\index12.html">Conocimiento</a></article>
+			<div class="brother act"><a href="#"><img src="https://image.flaticon.com/icons/svg/3063/3063198.svg" class="img-fluid" alt="Covid"></a></div>
+			<div class="brother know"><a href="HTML/index12.html"><img src="https://image.flaticon.com/icons/svg/3081/3081720.svg" class="img-fluid" alt="Conocimiento"></a></div>
+			<div class="brother ad"><a href="#"><img src="https://image.flaticon.com/icons/svg/3065/3065012.svg" class="img-fluid" alt="Publicidad"></a></div>
 		</div>
 
 
@@ -127,17 +131,16 @@
 					<tr><td>Fecha: <input type="date"></td></tr>
 					<button>Enviar</button>
 				</label>		
-				<a href="mailto:manuel_ruiz@ciencias.unam.mx" class="yellow" title="enviar correo a manuel">Da click para tener contacto Inmediato via Correo</a>
+				<a href="mailto:manuel_ruiz@ciencias.unam.mx" class="yellow" title="Enviar correo a manuel">Da click para tener contacto Inmediato via Correo</a>
 			</div>
 			<div class="contact-table2">
 				<h5>Usuarios</h5>
-					<label for="name" required>Ingrese tu nombre: </label><input id name>
+					<label for="name" required>Ingrese tu nombre: </label><input>
 					<label>Ingrese su correo: </label><input type="email" name="">	
 					<label>Ingrese su contraseña: </label><input type="pasword" name="pasword">
 					<button>Enviar</button>
 			</div>
 		</div>
-
 
 		<div class="farewell">
 			<div class="final-botton1">
@@ -153,8 +156,6 @@
 				</footer>
 			</div>
 		</div>
-		
-
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

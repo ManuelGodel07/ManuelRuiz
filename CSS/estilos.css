@@ -1,78 +1,42 @@
-* {
-	box-sizing: border-box;
-	font-family: monospace;
-	font-size: 16px;
-	text-align: justify;
+*{
+	scroll-behavior: smooth;
+}
+body{
 	margin:0;
 	padding: 0;
-	scroll-behavior: smooth;
-	display: flexbox;
-	flex-flow: row wrap;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: column wrap;
 	justify-content: space-between;
-	align-items: baseline;
+	text-align: justify;
+	align-items: center;
 	align-content: space-evenly;
-}
-
-body{
+	font-size: 16px;
+	font-family: monospace;
 	background-image: linear-gradient( rgb(7, 29, 104),white 40%);
 	/*background: url() position / size repeat attachment origin clip*/
 }
-
-header{ /*CONTENEDOR*/
+header{
 	width: 100%;
-	height: 35vh;
+	height: 30vh;
 }
 
 .head-box{
-	height: 100%;
-}
-
-.head{
-	background: url(https://image.freepik.com/vector-gratis/lujo-geometrico-abstracto-moderno-azul-oro-s-invitacion-elemento-portada-fondo-decoracion-elegante_64718-206.jpg) center / 100% 100% no-repeat;
-	border-bottom: 2px solid rgb(196, 155, 34);
-	height: 70%;
-	width: 100%;
-	padding: 0;
-}
-.element{
-	height: 30%;
-	width: 100%;
-	background: linear-gradient(45deg, rgb(7, 29, 104),black,rgb(7, 29, 104),rgb(7, 29, 104),black,rgb(7, 29, 104));
-}
-.menu{
+	height: 75%;
+	padding: 0px;
+	border: solid goldenrod 1px;
 	display: flex;
-	height: 100%;
-	list-style: none;
-	margin: 0;
-}
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	background: url(https://image.freepik.com/vector-gratis/lujo-geometrico-abstracto-moderno-azul-oro-s-invitacion-elemento-portada-fondo-decoracion-elegante_64718-206.jpg) center / 100% 100% no-repeat;
 
-.menu .menu-link{
-	font-family: sans-serif;
-	font-size: larger;
-	text-decoration: none;
-	color: rgb(177, 173, 173);
-	display: block;
-}
-.menu-link:hover{
-   color: white;
-}
-.menu-item:hover .submenu{
-   display: block;
-}
-.submenu{
-	display: block;
-	position: absolute;
-	display: none;
-	z-index: 2;
-	list-style: none;
-	background: linear-gradient(90deg, rgb(7, 29, 104),rgb(7, 29, 104), rgb(0, 0, 0),rgb(7, 29, 104),rgb(7, 29, 104));
 }
 .logo{
 	width: 100px;
 	height: 100px;
 }
 input.src{
-
 	outline: none;
 	font-size: 1.5em;
 	border-radius: 25px;
@@ -93,22 +57,84 @@ input.src:hover{
 
 
 
-/*------------------------------------------------------------------*/
-
-.contenedor {
-	width: 90%;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.element{
+	font-size: 1em;
+	height: 25%;
+	background: linear-gradient(45deg, rgb(7, 29, 104),black,rgb(7, 29, 104),rgb(7, 29, 104),black,rgb(7, 29, 104));
 }
 
-/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
-.conteiner .contenedor-principal {
+
+.menu{
 	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	line-height: normal;
+	margin:0;
+	padding: 0;
+}	
+.menu .menu-link{
+	font-family: sans-serif;
+	font-size: 1.2em;
+	color: rgb(185, 184, 184);
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+ 
+}
+.menu-link:hover{
+	color: white;
+}
+.menu .menu-item{
+	text-decoration: none;
+	list-style: none;
+	position: relative;
+	text-align: center;
+}
+
+.menu-item:hover .submenu{
+   display: block;
+}
+.submenu{
+	display: block;
+	position: absolute;
+	display: none;
+	z-index: 2;
+	list-style: none;
+	padding: 0;
+	background: rgb(7, 29, 104);
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
+
+.conteiner {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 100%;
 	align-items: center;
 	position: relative;
-	flex-direction: row;
+}
+
+.titulo{
+	height: 10%;
+	color:black;
+	font-weight: bold;
+}
+.conteiner .contenedor-principal {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	position: relative;
+	height: 90%;
 }
 .conteiner .contenedor-principal .flecha-izquierda,
 .conteiner .contenedor-principal .flecha-derecha {
@@ -116,11 +142,10 @@ input.src:hover{
 	border: none;
 	height: 20%;
 	line-height: 40px;
-	width: 50px;
+	width: 4%;
 	cursor: pointer;
 	z-index: 500;
 	transition: .2s ease all;
-
 }
 
 .conteiner .contenedor-principal .flecha-izquierda {
@@ -133,7 +158,6 @@ input.src:hover{
 /* ---- ----- ----- Carousel ----- ----- ----- */
 .conteiner .contenedor-carousel {
 	width: 100%;
-	height: 40vh;
 	overflow: hidden;
 	scroll-behavior: smooth;
 }
@@ -156,32 +180,41 @@ input.src:hover{
 	transform-origin: center;
 }
 
+.conteiner .contenedor-principal .flecha-izquierda:hover,
+.conteiner .contenedor-principal .flecha-derecha:hover {
+	height: 25%;
+	width: 5%;
+}
+
 .conteiner .contenedor-carousel .carousel .pic img {
 	width: 100%;
 	height: 100%;
 	vertical-align: center;
 }
-
-/*---- ----- ----- Media Queries ----- ----- -----*/
-@media screen and (max-width: 800px) {
-	.conteiner .contenedor-carousel .carousel .pic {
-		min-width: 40%;
-		min-height: 100%;
-		transition: .3s ease all;
-		box-shadow: 5px 5px 10px rgba(0,0,0, .3);
-	}
-
-}
 .art{
-	padding: 0px;
 	display: flex;
-	flex-flow: column nowrap;
+	flex-flow: column wrap;
+	justify-content: start;
 	align-items: center;
+	margin:0;
+	padding:15px;
+	height: 80vh;
+}
+.text{
+	height: 25%;
+	width: 70%;
 }
 .video{
-	width: 50vw;
-	height: 50vh;
+	width: 100%;
+	height: 75%;
 }
+.vid{
+	width: 100%;
+	height: 100%;
+}
+
+
+
 
 .intel{
 	display: flex;
@@ -191,6 +224,14 @@ input.src:hover{
 	padding: 10px;
 	height: 50vh;
 	align-items: center;
+}
+.geo, .act, .know, .ad{
+	border: 3px solid black;
+	align-items: stretch;
+}
+.geo img, .act img, .know img, .ad img{
+	width: 100%;
+	height: 100%;
 }
 .brother{
 	width: 20%;
@@ -203,28 +244,6 @@ input.src:hover{
 	transform-origin: center;
 	transition: 0.5s ease-out;
 }
-.geo{
-
-	border: 3px solid black;
-}
-.ad{
-	background: url(https://image.flaticon.com/icons/svg/3065/3065012.svg) center / cover no-repeat;
-	border: 3px solid black;
-}
-.act{
-	background: url(https://image.flaticon.com/icons/svg/3063/3063198.svg) center / cover no-repeat;
-	border: 3px solid black;
-}
-
-.know{
-	background: url(https://image.flaticon.com/icons/svg/3081/3081720.svg) center / cover no-repeat;
-	border: 3px solid black;
-}
-
-
-
-
-
 .contact{
 	display: flex;
 	flex-flow: row wrap;
@@ -232,8 +251,12 @@ input.src:hover{
 	align-items: stretch;
 	align-content: space-around;
 	padding: 0;
+	height: 70vh;
+	width: 90%;
 }
 .contact-table1{
+	height: 100%;
+	width: 40%;
 	border: 3px solid black;
 	padding: 5%;
 	border-radius: 25px;
@@ -243,6 +266,9 @@ input.src:hover{
 
 }
 .contact-table2{
+	height: 100%;
+	width: 40%;
+
 	border: 3px solid black;
 	padding: 5%;
 	border-radius:25px;
@@ -251,22 +277,14 @@ input.src:hover{
 	white-space: pre-line;
 
 }
-[type="submit"]{
-	background: rgb(139, 204, 227);
-	color:black}
-.aumentar{
-	font:icon;
-	text-decoration: none;
-	margin:1em; 
-}
+
+
 .farewell{
 	border:3px solid black;		
 	color: whitesmoke;
 	display: flex;
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	flex-flow: row wrap;
-	height: 200px;
+	height: auto;
 	justify-content: space-around;
 	background: linear-gradient( 45deg,rgb(9, 46, 146) 50%, rgb(234, 184, 27 ) 50%);
 
@@ -283,13 +301,245 @@ input.src:hover{
 	text-align-last: center;
 	scroll-behavior: smooth;
 }
+/*---- ----- ----- Media Queries ----- ----- -----*/
+/***********************************************************************************************/
 
-
-
-/*
-	[href$=".jpg"]{
-		color:black;
-		background: 
-		padding-top: 6rem;
+@media screen and (max-width: 75em) {
+	header{
+		height: 20em;
 	}
-*/
+	.logo{
+		width: 17em;
+		height: 9em;
+	}
+	.head-box{
+		height: 50%;
+	}
+	.element{
+		height: 50%;
+		font-size: 2em;
+	}
+
+}
+
+
+
+/***********************************************************************************************/
+@media screen and (max-width: 64em) {
+	header{
+		height: 24em;
+		font-size: 0.7em;
+	}
+	.logo{
+		width: 15em;
+		height: 7em;
+	}
+	input.src{
+		width: 25vw;
+	}
+	.conteiner .contenedor-principal {
+		align-items: center;
+		height: 12em;
+	}
+	.conteiner .contenedor-carousel{
+		height: inherit;
+	}
+	.contened{
+		height: 30em;
+		width: 80%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.intel{
+		height: 13em;
+		margin:0;
+		padding: 0;
+	}
+	.multimedia{
+		height: 60%;
+		width: 100%;
+	}
+	
+	.multimedia iframe{
+		height: 100%;
+		width: 100%;
+	}
+	.text1{
+		height: 40%;
+		width: 80%;
+		font-size: 1.5em;
+	}
+	.contact-table{
+		font-size: 1.2em;
+		}
+	.contact .contact-table h1{
+		font-size: 2em;
+	}
+}
+/***********************************************************************************************/
+
+@media screen and (max-width: 48em) {
+	header{
+		height: 18em;
+	}
+	.element{
+		font-size: 2.5em;
+	}
+
+	.head-box .logo{
+		width: 15em;
+		height: 8em;
+	}
+
+	input.src{
+		width: 25vw;
+		height: 1em;
+	}
+
+	.menu-item .menu-link{
+		font-size: .8em;
+	}
+	.conteiner .contenedor-principal {
+		align-items: center;
+		height: 9em;
+	}
+	.conteiner .contenedor-carousel{
+		height: inherit;
+	}
+	
+	.contact, .contact-table{
+		padding: 0;
+	}
+	.intel{
+		height: 13em;
+	}
+	.tables .Marcas .brother-1{
+		width: 6em;
+		height: 6em;
+		margin: 8px;
+	}
+	.contact-table{
+		font-size: 1em;
+	}
+	.tables h4{
+		font-size: 3em;
+	}
+	.tables p{
+		font-size: 1.5em;
+	}
+
+	.contact .contact-table h1{
+		font-size: 2em;
+	}
+	.final-botton1, .final-botton2{
+		font-size: 1em;
+	}
+}
+/***********************************************************************************************/
+@media screen and (max-width: 37.5em) {
+	.head-box .logo{
+		width: 12em;
+		height: 7em;
+	}
+	header{
+		height: 18em;
+	}
+	.element{
+		font-size: 2em;
+	}
+
+
+	.conteiner .contenedor-principal {
+		align-items: center;
+		height: 9em;
+	}
+	.conteiner .contenedor-carousel{
+		height: inherit;
+	}
+	.contened .text1{
+		font-size: 1.3em;
+	}
+	.intel{
+		height: 10em;
+	}
+	.tables .Marcas .brother-1{
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+	}
+	.tables h4{
+		font-size: 1.3em;
+	}
+	.tables p{
+		font-size: 1.1em;
+	}
+	.contact-table{
+		font-size: 1em;
+	
+		}
+	.contact .contact-table h1{
+		font-size: 1.5em;
+	}
+	.final-botton1, .final-botton2{
+		font-size: 1em;
+	}
+}
+/***********************************************************************************************/
+@media screen and (max-width: 30em) {
+	header{
+		height: 12em;
+	}
+	.head-box .logo{
+		width: 9em;
+		height: 5em;
+	}
+	.element{
+		font-size: 1.5em;
+	}
+
+	.conteiner .indicadores{
+		font-size: 1.5em;
+	}
+	.conteiner .contenedor-principal {
+		align-items: center;
+		height: 8em;
+	}
+	.conteiner .contenedor-carousel{
+		height: inherit;
+	}
+	.contened .text1{
+		font-size: 1em;
+	}
+	.intel{
+		height: 15em;
+	}
+
+	.brother{
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+		padding: 0;
+	}
+	.brother-1{
+		width: 1em;
+		height: 1em;
+		margin: .5em;
+	}
+	.contact-table{
+		font-size: 0.9em;	
+		}
+	.contact .contact-table h1{
+		font-size: 1.1em;
+	}
+	.final-botton1, .final-botton2{
+		font-size: 1em;
+	}
+
+}
+
+@media screen and (max-width: 20em) {
+
+
+}
