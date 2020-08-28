@@ -106,8 +106,61 @@ input.src:hover{
 	background: rgb(7, 29, 104);
 }
 
+.panel{
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+	right: 0;
+	left: 0;
+    background-color: rgba(117, 159, 199, 0.534);
+    width: 30%;
+    transition: transform .3s ease;
+    transform: translate(-100%,0%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.panel.is-active{
+    transform: translate(0,0);
+}
 
 
+
+.panel-btn{
+    position: fixed;
+    z-index: 999;
+	bottom: 1vw;
+	left: 1vw;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    padding: 0;
+	display: flex;
+	justify-content: center;
+}
+.men{
+    width: inherit;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: center;
+	text-align: center;
+}
+.men a{
+    padding: 2em;
+    width: inherit;
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.men a:hover{
+    font-weight: bold;
+    color: black;
+}
 
 
 
@@ -321,6 +374,10 @@ input.src:hover{
 		height: 50%;
 		font-size: 2em;
 	}
+	.men a{
+		padding: 1em;
+		font-size: 2em;
+	}
 }
 
 
@@ -358,7 +415,10 @@ input.src:hover{
 		border: 0;
 		margin: 0;
 	}
-
+	.men a{
+		padding: 1em;
+		font-size: 1.5em;
+	}
 }
 /***********************************************************************************************/
 
@@ -433,6 +493,13 @@ input.src:hover{
 	.final-botton2{
 		font-size: .8em;
 	}
+	.panel{
+		position: fixed;
+	}
+	.men a{
+		padding: 1em;
+		font-size: 1.5em;
+	}
 }
 /***********************************************************************************************/
 @media screen and (max-width: 37.5em) {
@@ -477,6 +544,10 @@ input.src:hover{
 	}
 	input[type=password]{
 		width: 7em;
+	}
+	.men a{
+		padding: .5em;
+		font-size: 1em;
 	}
 }
 /***********************************************************************************************/
@@ -543,6 +614,10 @@ input.src:hover{
 	input[type=password]{
 		width: 8em;
 		height: 2em;
+	}
+	.men a{
+		padding: .5em;
+		font-size: .8em;
 	}
 }
 

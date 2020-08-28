@@ -9,7 +9,34 @@
 		<link rel="stylesheet" type="text/css" href="CSS\estilos.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<title>Manuel Ruiz</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css" rel="stylesheet">
 		<link rel="shortcut icon" href="favicon\man.ico">
+		<script>
+			"use strict";
+			
+			!function() {
+			  var t = window.driftt = window.drift = window.driftt || [];
+			  if (!t.init) {
+				if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+				t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+				t.factory = function(e) {
+				  return function() {
+					var n = Array.prototype.slice.call(arguments);
+					return n.unshift(e), t.push(n), t;
+				  };
+				}, t.methods.forEach(function(e) {
+				  t[e] = t.factory(e);
+				}), t.load = function(t) {
+				  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+				  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+				  var i = document.getElementsByTagName("script")[0];
+				  i.parentNode.insertBefore(o, i);
+				};
+			  }
+			}();
+			drift.SNIPPET_VERSION = '0.3.1';
+			drift.load('fpk6gu5h4phf');
+			</script>
 	</head>
 	<body>
 
@@ -38,9 +65,23 @@
 					<li><a target="_blank" class="menu-link" href="https://api.whatsapp.com/send?phone=525540145714&text=Hola%20Manuel,%20me%20pareci%C3%B3%20asombrosa%20tu%20paguina">Contacto</a></li>
 				</ul>
 			</nav>
-
-
 		</header>
+
+        <button class=" panel-btn hamburger hamburger--vortex" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        <aside class="panel">
+            <nav class="men">
+                <a href="HTML/index2.html">Curriculum Vitae</a>
+                <a href="HTML/index9.html">Proyectos concluidos</a>
+                <a href="https://api.whatsapp.com/send?phone=525540145714&text=Hola%20Manuel,%20me%20pareci%C3%B3%20asombrosa%20tu%20paguina">Contacto</a>
+                <a href="http://multicommexicana.com/">Multicom</a>
+                <a href="#">Agradecimientos</a>
+            </nav>
+        </aside>
+
 
 		<!---------------------------------------------------------------------------------------->
 		<div class="conteiner">
@@ -142,6 +183,8 @@
 				</footer>
 			</div>
 		</div>
+		<script src="js/index_dom.js" type="module"></script>
+		<script src="js/hamburguesa.js"></script>
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
