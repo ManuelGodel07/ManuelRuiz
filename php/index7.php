@@ -9,8 +9,22 @@
     </head>
     <body>
         <h1>Hola Mundo, que cositas :3</h1>
-        <?php
-            include("conexion.php")
-        ?>   
+
+    <?php
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <p>Prueba 2</p>
+           
+        </body>
+        </html>
+        
+    include("conexion.php")
+    ?>   
     </body>
 </html>
