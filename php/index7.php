@@ -11,10 +11,13 @@
         <hgroup>
             <h1>Formulario</h1>
         </hgroup>
-        <form name="envio-get_frm" action="envio.php" methd="GET" enctype="application/x-www-form-urlencoded">
+        <form name="envio-post_frm" action="envio.php" method="POST" enctype="application/x-www-form-urlencoded">
             <label>Ingresa tu nombre</label>
             <input type="text" name="nombre_txt"/>
+            <label>Ingresa tu contraseña</label>
+            <input type="password" name="password_txt"/>
 
+            <input type="submit" name="enviar_btn" value="Enviar"/> 
         </form>
 
         <?php
