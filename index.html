@@ -11,7 +11,7 @@
 		<title>Manuel Ruiz</title>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css" rel="stylesheet">
 		<link rel="shortcut icon" href="favicon\man.ico">
-		<script>
+		<!----<script>
 			"use strict";
 			
 			!function() {
@@ -36,7 +36,7 @@
 			}();
 			drift.SNIPPET_VERSION = '0.3.1';
 			drift.load('fpk6gu5h4phf');
-			</script>
+			</script>-->
 	</head>
 	<body>
 
@@ -149,19 +149,27 @@
 			<div class="brother ad"><a href="#"><img src="https://image.flaticon.com/icons/svg/3065/3065012.svg" class="img-fluid" alt="Publicidad"></a></div>
 		</div>
 
-
 		<div class="contact">
-			<div class="contact-table1">
-				<p class="h4">Contacto</p>
-				<p>¿Quieres recirbir más información?</p>
-				<label>
-					<tr><td>Nombre: <input type="text" required></td></tr>
-					<tr><td>Apellido: <input type="text" required></td></tr>
-					<tr><td>Correo: <input type="email" value placeholder="ejemplo@domilio.com" required></td></tr>
-					<button>Enviar</button>
-				</label>		
+
+			<form name="formulario_contacto" method="POST" class="contact-table1" action="send_mail.php">
+				<h2>Contacto</h2>
+				<label for="nombre">Nombre: </label>
+				<input type="text" name="nombre" id="nombre">
+				<label for="nombre">Correo: </label>
+				<input type="email" name="email" id="email">
+				<label for="nombre">Asunto: </label>
+				<input type="text" name="asunto" id="asunto">
+				<label for="nombre">Telefono: </label>
+				<input type="text" name="telefono" id="Telefono">
+				<label for="nombre">Comentarios: </label>
+				<textarea name="comentarios" id="comentarios"></textarea>
+				<button>Enviar</button>
+				</label>
+
 				<a href="mailto:manuel_ruiz@ciencias.unam.mx" class="yellow" title="Enviar correo a manuel">Da click para tener contacto Inmediato via Correo</a>
-			</div>
+			</form>
+
+
 			<div class="contact-table2">
 				<h5>Usuarios</h5>
 					<label>
