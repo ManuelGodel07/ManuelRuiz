@@ -1,5 +1,5 @@
-  
-<?php
+ <?php
+/*****
 $de = $_POST["de_txt"];
 $para = $_POST["para_txt"];
 $asunto = $_POST["asunto_txt"];
@@ -45,4 +45,5 @@ if(move_uploaded_file($archivo,$destino)){
 unlink($destino); //borramos el archivo del servidor
 
 header("Location: formulario-php.php?respuesta=$respuesta");
+* */
 ?>

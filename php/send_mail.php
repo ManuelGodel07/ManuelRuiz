@@ -1,4 +1,6 @@
 <?php
+
+/*****
 	$texto_mail= $_POST["comentarios"];
 	$destinatario= $_POST["email"];
 	$comentario= $_POST["comentarios"];
@@ -13,7 +15,7 @@
 	}else{
 		echo "hay un error";
 	}
-
+ */
 
 	
 ?>

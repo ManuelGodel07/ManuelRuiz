@@ -54,12 +54,12 @@
 		Adjuntar archivo: <input type="file" name="archivo_fls"/></br>
 		<input type="button" name="enviar_btn" value="Enviar"/><br/>
 
-
-		<?php
+	<?php
+	/****
 		error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 		if(isset($_GET["respuesta"])){
 			echo "<span>". $_GET["respuesta"] . "</span>";
-		}
+		} */
 		?>
 	</form>
 </body>
