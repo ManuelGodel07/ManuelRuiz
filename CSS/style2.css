@@ -7,11 +7,13 @@ body{
 }
 .heads{
 	height: 200px;
+	width: 100%;
  	background-clip: content-box; 
 	margin: 0px;
 	border: 0px;
 	padding: 1rem;
-	background: url(https://images.vexels.com/media/users/3/75939/preview2/bf7b4aaee813602cd6a34fd4df45d62c-fondo-de-vector-azul-y-oro.jpg) center / 1350px 300px no-repeat;
+	background: url(https://images.vexels.com/media/users/3/75939/preview2/bf7b4aaee813602cd6a34fd4df45d62c-fondo-de-vector-azul-y-oro.jpg) center / 100% 300px no-repeat;
+	border: solid goldenrod 1px;
 	color: rgb(248, 246, 191 );
 	text-align: justify-all;
 	font-size: 1rem;
@@ -19,7 +21,7 @@ body{
 .mnu{
 	margin: 0px;
 	background: black;
-	
+	height: 500px;
 }
 
 .navegation{
