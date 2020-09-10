@@ -1,28 +1,13 @@
 body{
-    background:url(../images/winner.png) center /100% 100% no-repeat;
-    width: 100vw;
+	background-color: rgb(34, 85, 151);
+	width: 100vw;
     height: 100vh;
     color: black;
 }
 table{
 	text-align:center;
 }
-.modal:target{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
 
-}
-.modal-box{
-	width: 50vw;
-	height: 50vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	background-color: rgba(201, 209, 220, .5);
-}
 td{
 	border: 2px solid black;
 }
