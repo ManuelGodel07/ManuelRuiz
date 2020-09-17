@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MEX">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-Chrome-1">
@@ -42,7 +42,7 @@
         </tr>
         <tr>
             <td>1</td>
-            <td>Luis Manuel Ruiz Meza</td>
+            <td>Manuel Ruiz</td>
             <td>Reclutador</td>
             <td></td>
             <td></td>
@@ -68,6 +68,90 @@
 
     <input type="text" name="nombre" placeholder="Nombre"><button type="submit" name="nombre" >Enviar</button>
 
-    <script src= "#"></script>
+    <form id="calc" method="POST">
+        <label></label>
+        <input type="number"  name="dias" class="name" id="dias" autofocus placeholder="Dias Trabajados">
+        <label></label>
+        <input type="number" id="sueldo_diario" placeholder="Sueldo Diario">
+        <button type="button" onclick="resultado();">Resultado</button>
+        <button type="button" onclick="sumar();">Sumar</button>
+        
+
+
+
+
+        <button onclick="limpiar();">Borrar Datos</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="table">
+        <thead>
+            <th>Selecciónar</th>
+            <th>Nombre</th>
+            <th>Puesto</th>
+            <th>Id de empleado</th>
+        </thead>
+        <form action="#" id="calc" method="POST">
+            <tbody class="job" style="cursor: pointer">
+
+                <tr onclick="seleccionar(this,1)">
+                    <th>
+                        <input type="checkbox" name="check[]" id="ck1">
+                    </th>
+                    <th>Luis Manuel Ruiz Meza</th>
+                    <th>Reclutador</th>
+                    <th>001</th>
+                </tr>
+
+                <tr onclick="seleccionar(this,2)">
+                    <th>
+                        <input type="checkbox" name="check[]" id="ck2">
+                    </th>
+                    <th>Brandon Flores Galvan</th>
+                    <th>Auditor</th>
+                    <th>002</th>
+                </tr>
+
+                
+
+            </tbody>
+
+        </form> 
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src= "../js/script13.js"></script>
 </body>
 </html>

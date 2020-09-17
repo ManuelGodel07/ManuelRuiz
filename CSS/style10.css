@@ -25,3 +25,33 @@ table{
 td{
     border: 1px solid gray;
 }
+.menu .menu-link{
+	font-family: sans-serif;
+	font-size: 1.2em;
+	color: rgb(185, 184, 184);
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+ 
+}
+.menu-link:hover{
+	color: white;
+}
+.menu .menu-item{
+	text-decoration: none;
+	list-style: none;
+	position: relative;
+	text-align: center;
+}
+
+.job .names .submenu{
+	display: block;
+ }
+ .submenu {
+	 position: absolute;
+	 display: none;
+	 z-index: 2;
+	 list-style: none;
+	 padding: 0;
+}
+
