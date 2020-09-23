@@ -30,7 +30,7 @@
             <td>Puesto</td>
             <td>Salario Neto</td>
             <td>Salario Diario</td>
-            <td>Dias por pagar</td>
+            <td>Asistencias</td>
             <td>Dias de compensación</td>
             <td>Compensaciones</td>
             <td>Prima vacacional</td>
@@ -41,16 +41,58 @@
             <td></td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>Manuel Ruiz</td>
-            <td>Reclutador</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                
+                <input type="button" value="cambiar" onClick="
+                
+			    document.getElementById('parrafo1').innerHTML= 'Caninos';
+		    	document.getElementById('parrafo2').innerHTML= 'Felinos';
+                
+                ">
+                <p id="parrafo2">Puesto</p>
+                <script>
+                </script>
+                Document.getElementById('puesto').innerHTML='hola';
+                ">
+            </td>
+            <td>
+                <p id="parrafo1">Nombre</p> 
+                <input type="button" value="insertar" onclick="
+                Document.getElementById('nombre').innerHTML='';">
+
+            </td>
+            <td>
+                <input type="number" id="sueldo_diario">
+            </td>
+            <td>
+                <input type="number"  name="dias" class="name" id="dias" autofocus>
+            </td>
+            <td>
+                <input type="number" id="compensaciónD">
+
+            </td>
+            <td>
+                <input type="number" id="compensaciónV">
+            </td>
+            <td>
+                <input type="number" id="prima">
+            </td>
+            <td>
+                <span id="txtI">Ingresos</span>
+            </td>
+            <td>
+                <span id="txtR">Retardos</span>
+            </td>
+            <td>
+                <span id="txtS">Sanciones</span>
+            </td>
+            <td>
+                <span id="txtT">Total</span>
+            </td>
+            <td>
+                <span id="txtO">Observaciónes</span>
+            </td>
+
         </tr>
         <tr>
             <td>2</td>
