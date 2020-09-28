@@ -54,3 +54,38 @@ td{
 	 padding: 0;
 }
 
+
+
+
+.modal:target{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+
+}
+.modal-box{
+	width: 80vw;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color: rgba(165, 165, 177, 0.63);
+}
+.modal-activo:target{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+
+}
+.modal-box-activo{
+	width: 90vw;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background-color: rgba(148, 148, 150, 0.63);
+}
