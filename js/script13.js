@@ -31,7 +31,11 @@ const $listaTrabajadores=document.getElementById("trabajadores"),
 
 
 
-    let work1=["Ruiz Meza Luis Manuel","Reclutador",8000];
+    let work1=["Ruiz Meza Luis Manuel","Reclutador",8000],
+        work2=["Jorge Ramirez Peralta","Auditor",9000],
+        work3=["Veronica Smith Juarez","Subdirección",17000],
+        work4=["Francisco Javier Chavez","Gerente de Ventas",11000],
+        work5=["Juan David Santos Ruiz","Ejecutivo de Mayoreo",6500];
 
 function tabla(){
     let $contendTable= `
@@ -80,9 +84,9 @@ function tabla(){
                         <td>$11000</td>
                     </tr>
                     <tr>
-                    <td>Juan David Santos Ruiz</td>
-                    <td>Ejecutivo de Mayoreo</td>
-                    <td>$6500</td>
+                    <td>${work5[0]}</td>
+                    <td>${work5[1]}</td>
+                    <td>${work5[2]}</td>
                 </tr>
 
                 </table>
@@ -108,15 +112,35 @@ function validarFormulario() {
         elemento4= document.forms["miForm"]["empleado4"].checked,
         elemento5= document.forms["miForm"]["empleado5"].checked;
 
-    if(elemento1== true && elemento2==true && elemento3==true && elemento4==true && elemento5==true) {
-        document.getElementById("info").innerHTML= "el elemento fue seleccionado";
-        document.getElementById("info").innerHTML= `Nombre: ${work1[0]}`;
-
+    if(elemento1== true){
+        document.getElementById("nombreEmp").innerHTML= `${work1[0]}`;
+        document.getElementById("puesto").innerHTML= `${work1[1]}`;
+        document.getElementById("salario-neto").innerHTML= `${work1[2]}`;
+        document.getElementById("salario-diario").innerHTML= `${work1[2]/30}`;
         return false;
-    }else
-    document.getElementById("info").innerHTML= "el elemento no fue seleccionado";
+    }else{
+    }
+    if(elemento2==true){
+
+    }else{
+    }
+    if(elemento3==true){
+
+    }else{
+    }
+    if(elemento4==true){
+
+    }else{
+    }
+    if(elemento5==true){
+        document.getElementById("nombreEmp5").innerHTML= `${work5[0]}`;
+        document.getElementById("puesto5").innerHTML= `${work5[1]}`;
+        document.getElementById("salario-neto5").innerHTML= `${work5[2]}`;
+        document.getElementById("salario-diario5").innerHTML= `${work5[2]/30}`;
+    }else{
+    }
     return false;
-}
+    }
 
 /**** 
  function on(){
