@@ -27,6 +27,7 @@ function resultado() {
 $checkbox = document.forms["miForm"]["empleado1"].checked;
 **/
 const $listaTrabajadores=document.getElementById("trabajadores"),
+    $enviar=document.getElementById("enviar"),
     $checkbox = document.getElementById('checkbox');
 
 
@@ -69,19 +70,19 @@ function tabla(){
                         <td>${work1[2]}</td>
                     </tr>
                     <tr>
-                        <td>Jorge Ramirez Peralta</td>
-                        <td>Auditor</td>
-                        <td>$9000</td>
+                        <td>${work2[0]}</td>
+                        <td>${work2[1]}</td>
+                        <td>${work2[2]}</td>
                     </tr>
                     <tr>
-                        <td>Veronica Smith Juarez</td>
-                        <td>Subdirección</td>
-                        <td>$17000</td>
+                        <td>${work3[0]}</td>
+                        <td>${work3[1]}</td>
+                        <td>${work3[2]}</td>
                     </tr>
                     <tr>
-                        <td>Francisco Javier Chavez</td>
-                        <td>Gerente de Ventas</td>
-                        <td>$11000</td>
+                        <td>${work4[0]}</td>
+                        <td>${work4[1]}</td>
+                        <td>${work4[2]}</td>
                     </tr>
                     <tr>
                     <td>${work5[0]}</td>
@@ -121,15 +122,27 @@ function validarFormulario() {
     }else{
     }
     if(elemento2==true){
-
+        document.getElementById("nombreEmp2").innerHTML= `${work2[0]}`;
+        document.getElementById("puesto2").innerHTML= `${work2[1]}`;
+        document.getElementById("salario-neto2").innerHTML= `${work2[2]}`;
+        document.getElementById("salario-diario2").innerHTML= `${work2[2]/30}`;
+        return false;
     }else{
     }
     if(elemento3==true){
-
+        document.getElementById("nombreEmp3").innerHTML= `${work3[0]}`;
+        document.getElementById("puesto3").innerHTML= `${work3[1]}`;
+        document.getElementById("salario-neto3").innerHTML= `${work3[2]}`;
+        document.getElementById("salario-diario3").innerHTML= `${work3[2]/30}`;
+        return false;
     }else{
     }
     if(elemento4==true){
-
+        document.getElementById("nombreEmp4").innerHTML= `${work4[0]}`;
+        document.getElementById("puesto4").innerHTML= `${work4[1]}`;
+        document.getElementById("salario-neto4").innerHTML= `${work4[2]}`;
+        document.getElementById("salario-diario4").innerHTML= `${work4[2]/30}`;
+        return false;
     }else{
     }
     if(elemento5==true){
@@ -137,39 +150,43 @@ function validarFormulario() {
         document.getElementById("puesto5").innerHTML= `${work5[1]}`;
         document.getElementById("salario-neto5").innerHTML= `${work5[2]}`;
         document.getElementById("salario-diario5").innerHTML= `${work5[2]/30}`;
+        return false;
     }else{
     }
-    return false;
     }
-
-/**** 
- function on(){
-     console.log("Hemos pulsado en on");
-}
-
-function off(){
-    console.log("Hemos pulsado en off");
-}
-function comprueba(){
-  if(checkbox.checked){
-      on();
-  }else{
-     off();
-  }
-}
-  
-$checkbox.addEventListener("checked", comprueba,false);
-  */
-  
- 
- const $nombre1= document.getElementById("emp1");
     
-    console.log($nombre1);
-    let trabajador1={
-        nombre: $nombre1,
-        apellido:"cacahuate"
+    
+    
+    
+    document.addEventListener("keyup", function () {
+        let salario = document.getElementById('salario-diario').innerHTML,
+            asistencias = document.getElementById('asistencias').innerHTML,
+            compensacionD = document.getElementById('compensacionD').innerHTML,
+            compensacion = document.getElementById('compensacion').innerHTML,
+            prima = document.getElementById('prima').innerHTML;
+        document.getElementById("total").innerHTML= `${work1[2]}`*asistencias+compensacionD+compensacion+prima
+    })
+    
+    /***
+     * 
+     
+     const $x=document.getElementById("asistencias"),
+         $y=document.getElementById("compensacion");
+
+
+     document.getElementById("total").innerHTML= `${work1[2]/30}`* this.value;
+     $b=$y.addEventListener("keyup",(event)=> {
+        let inputText= event.path[0].value;
+        console.log(`${inputText}`);
+    });* */
+
+    
+    document.getElementById("n1").addEventListener("click",n1);
+    function n1() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("n1").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
     }
-    console.log(trabajador1);
 
 
 
@@ -200,10 +217,119 @@ $checkbox.addEventListener("checked", comprueba,false);
 
 
 
+    document.getElementById("n2").addEventListener("click",n2);
+    document.getElementById("n3").addEventListener("click",n3);
+    document.getElementById("n4").addEventListener("click",n4);
+    document.getElementById("n5").addEventListener("click",n5);
+    document.getElementById("n6").addEventListener("click",n6);
+    document.getElementById("n7").addEventListener("click",n7);
+    document.getElementById("n8").addEventListener("click",n8);
+    document.getElementById("n9").addEventListener("click",n9);
+    document.getElementById("n0").addEventListener("click",n0);
+    document.getElementById("s").addEventListener("click",o1);
+    document.getElementById("r").addEventListener("click",o2);
+    document.getElementById("d").addEventListener("click",o3);
+    document.getElementById("m").addEventListener("click",o4);
+    document.getElementById("sr").addEventListener("click",showResult);
+    
 
-
-
-
+    function n2() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("n2").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    function n3() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("n3").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    function n4() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("n4").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    function n5() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("n5").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    function n6() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("n6").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    function n7() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("n7").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    function n8() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("n8").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    function n9() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("n9").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    function n0() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("n0").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    
+    function o1() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("s").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    
+    function o2() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("r").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    
+    function o3() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("d").innerHTML;
+        document.getElementById('resultado').innerHTML = actual + sumado
+    }
+    
+    function o4() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let sumado = document.getElementById("m").innerHTML;
+        document.getElementById('resultado').innerHTML = actual +  sumado
+    }
+    
+    function showResult() {
+        let actual = document.getElementById('resultado').innerHTML;
+        let suma = actual.indexOf("+");
+        let resta = actual.indexOf("-");
+        let div = actual.indexOf("÷");
+        let mult = actual.indexOf("x");
+        if (suma !== -1) {
+            arr = actual.split("+",2);
+            res = parseInt(arr[0]) + parseInt(arr[1]);
+            document.getElementById("resultado").innerHTML = res;
+        } else if (resta !== -1) {
+            arr = actual.split("-",2);
+            res = arr[0] - arr[1];
+            document.getElementById("resultado").innerHTML = res;
+            
+        } else if (div !== -1) {
+            arr = actual.split("÷",2);
+            res = arr[0] / arr[1];
+            document.getElementById("resultado").innerHTML = res;
+            
+        } else if (mult !== -1) {
+            arr = actual.split("x",2);
+            res = arr[0] * arr[1];
+            document.getElementById("resultado").innerHTML = res;
+            
+        }
+    }
 
 
 

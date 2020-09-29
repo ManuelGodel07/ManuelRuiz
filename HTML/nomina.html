@@ -53,14 +53,62 @@
             <td id="salario-neto"></td>
             <td id="salario-diario"></td>
             <td><input type="number" id="asistencias"></td>
+            <td><input type="number" id="compensacionD"></td>
             <td><input type="number" id="compensacion"></td>
-            <td><span id="Ingresos"></span></td>
-            <td><span id="prima"></span></td>
+            <td><input type="number" id="prima"></td>
             <td><span id="total"></span></td>
             <td><input type="number" id="retardos"></td>
             <td><input type="number" id="sanciones"></td>
             <td id="total-pagar"></td>
             <td><input type="text" name="observaciones" id="observaciones"></td>
+        </tr>
+        <tr>
+            <td><p>2</p></td>
+            <td><p id="nombreEmp2"></p></td>
+            <td id="puesto2"></td>
+            <td id="salario-neto2"></td>
+            <td id="salario-diario2"></td>
+            <td><input type="number" id="asistencias2"></td>
+            <td><input type="number" id="compensacion2"></td>
+            <td><span id="Ingresos2"></span></td>
+            <td><span id="prima2"></span></td>
+            <td><span id="total2"></span></td>
+            <td><input type="number" id="retardos2"></td>
+            <td><input type="number" id="sanciones2"></td>
+            <td id="total-pagar2"></td>
+            <td><input type="text" name="observaciones" id="observaciones2"></td>    
+        </tr>
+        <tr>
+            <td><p>3</p></td>
+            <td><p id="nombreEmp3"></p></td>
+            <td id="puesto3"></td>
+            <td id="salario-neto3"></td>
+            <td id="salario-diario3"></td>
+            <td><input type="number" id="asistencias3"></td>
+            <td><input type="number" id="compensacion3"></td>
+            <td><span id="Ingresos3"></span></td>
+            <td><span id="prima3"></span></td>
+            <td><span id="total3"></span></td>
+            <td><input type="number" id="retardos3"></td>
+            <td><input type="number" id="sanciones3"></td>
+            <td id="total-pagar3"></td>
+            <td><input type="text" name="observaciones" id="observaciones3"></td>    
+        </tr>
+        <tr>
+            <td><p>4</p></td>
+            <td><p id="nombreEmp4"></p></td>
+            <td id="puesto4"></td>
+            <td id="salario-neto4"></td>
+            <td id="salario-diario4"></td>
+            <td><input type="number" id="asistencias4"></td>
+            <td><input type="number" id="compensacion4"></td>
+            <td><span id="Ingresos4"></span></td>
+            <td><span id="prima4"></span></td>
+            <td><span id="total4"></span></td>
+            <td><input type="number" id="retardos4"></td>
+            <td><input type="number" id="sanciones4"></td>
+            <td id="total-pagar4"></td>
+            <td><input type="text" name="observaciones" id="observaciones4"></td>    
         </tr>
         <tr>
             <td><p>5</p></td>
@@ -79,7 +127,51 @@
             <td><input type="text" name="observaciones" id="observaciones5"></td>    
         </tr>
     </table>
-
+    <!-----
+    <form action="#" method="post">
+        <input type="number" name="compensacion" id="compensacion" placeholder="compensación">
+        <input type="number" name="prima-v" id="prima-v" placeholder="Vacaciones">
+        <td><input type="number" id="retardos-a" placeholder="retardos"></td>
+        <button type="submit" id="enviar">enviar</button>
+    </form>-->
+    <hr>
+    
+<div class="calculadora">
+	<div class="pantalla">
+		<div id="resultado"></div>
+	</div>
+	<div class="teclas">
+		<div class="numeros">
+			<div>
+		        <button id="n1">1</button>
+		        <button id="n2">2</button>
+		        <button id="n3">3</button>
+	    	</div>
+			<div>
+		        <button id="n4">4</button>
+		        <button id="n5">5</button>
+		        <button id="n6">6</button>
+		    </div>
+		    <div>
+		        <button id="n7">7</button>
+		        <button id="n8">8</button>
+		        <button id="n9">9</button>
+		    </div>
+		    <div>
+		        <button id="n0">0</button>
+		    </div>
+	    </div>
+		<div class="op">
+		    <button id="s">+</button>
+		    <button id="r">-</button>
+		    <button id="d">÷</button>
+		    <button id="m">x</button>
+	    </div>
+	</div>
+	<div class="sr">
+		<button id="sr">=</button>
+	</div>
+</div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src= "../js/script13.js"></script>
