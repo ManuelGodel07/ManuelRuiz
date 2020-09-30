@@ -27,7 +27,6 @@ function resultado() {
 $checkbox = document.forms["miForm"]["empleado1"].checked;
 **/
 const $listaTrabajadores=document.getElementById("trabajadores"),
-    $enviar=document.getElementById("enviar"),
     $checkbox = document.getElementById('checkbox');
 
 
@@ -93,13 +92,13 @@ function tabla(){
                 </table>
                 <a href="#">cerrar</a>
                 </aside>			
-        </div>
-        <div id="info"></div>
-    </section>`;
+                </div>
+                <div id="info"></div>
+        </section>`;
 $listaTrabajadores.insertAdjacentHTML("beforebegin",$contendTable);
 };
 
-$listaTrabajadores.addEventListener("click",tabla)
+$listaTrabajadores.addEventListener("click",tabla);
 
 function holaMundo() {
     console.log("hola mundo");
@@ -157,7 +156,8 @@ function validarFormulario() {
     
     
     
-    
+
+    //suma de nomina
     document.addEventListener("keyup", function () {
         let num2= Number(document.getElementById('asistencias').value),
             num3= Number(document.getElementById('compensacionD').value),
@@ -171,13 +171,57 @@ function validarFormulario() {
 
     })
 
-    
+    document.addEventListener("keyup", function () {
+        let num2= Number(document.getElementById('asistencias2').value),
+            num3= Number(document.getElementById('compensacionD2').value),
+            num4= Number(document.getElementById('compensacion2').value),
+            num5= Number(document.getElementById('prima2').value),
+            num6= Number(document.getElementById('retardos2').value),
+            num7= Number(document.getElementById('sanciones2').value);
 
+        document.getElementById("total2").innerHTML= `${work2[2]}`/30*(num2+num3)+num4+(num5*0.25);
+        document.getElementById("total-pagar2").innerHTML= `${work2[2]}`/30*(num2+num3)+num4+(num5*0.25)-num6-num7;
 
+    })
 
+    document.addEventListener("keyup", function () {
+        let num2= Number(document.getElementById('asistencias3').value),
+            num3= Number(document.getElementById('compensacionD3').value),
+            num4= Number(document.getElementById('compensacion3').value),
+            num5= Number(document.getElementById('prima3').value),
+            num6= Number(document.getElementById('retardos3').value),
+            num7= Number(document.getElementById('sanciones3').value);
 
+        document.getElementById("total3").innerHTML= `${work3[2]}`/30*(num2+num3)+num4+(num5*0.25);
+        document.getElementById("total-pagar3").innerHTML= `${work3[2]}`/30*(num2+num3)+num4+(num5*0.25)-num6-num7;
 
+    })
 
+    document.addEventListener("keyup", function () {
+        let num2= Number(document.getElementById('asistencias4').value),
+            num3= Number(document.getElementById('compensacionD4').value),
+            num4= Number(document.getElementById('compensacion4').value),
+            num5= Number(document.getElementById('prima4').value),
+            num6= Number(document.getElementById('retardos4').value),
+            num7= Number(document.getElementById('sanciones4').value);
+
+        document.getElementById("total4").innerHTML= `${work4[2]}`/30*(num2+num3)+num4+(num5*0.25);
+        document.getElementById("total-pagar4").innerHTML= `${work4[2]}`/30*(num2+num3)+num4+(num5*0.25)-num6-num7;
+
+    })
+
+    document.addEventListener("keyup", function () {
+        let num2= Number(document.getElementById('asistencias5').value),
+            num3= Number(document.getElementById('compensacionD5').value),
+            num4= Number(document.getElementById('compensacion5').value),
+            num5= Number(document.getElementById('prima5').value),
+            num6= Number(document.getElementById('retardos5').value),
+            num7= Number(document.getElementById('sanciones5').value);
+
+        document.getElementById("total5").innerHTML= `${work5[2]}`/30*(num2+num3)+num4+(num5*0.25);
+        document.getElementById("total-pagar5").innerHTML= `${work5[2]}`/30*(num2+num3)+num4+(num5*0.25)-num6-num7;
+
+    })
 
 
 
