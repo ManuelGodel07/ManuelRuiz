@@ -189,7 +189,6 @@ function validarFormulario() {
             num5= Number(document.getElementById('prima3').value),
             num6= Number(document.getElementById('retardos3').value),
             num7= Number(document.getElementById('sanciones3').value);
-
         document.getElementById("total3").innerHTML= Math.round(`${work3[2]}`/30*(num2+num3)+num4+(`${sal3}`*num5*0.25));
         document.getElementById("total-pagar3").innerHTML= Math.round(`${work3[2]}`/30*(num2+num3)+num4+(`${sal3}`*num5*0.25)-num6-num7);
     })
@@ -201,10 +200,8 @@ function validarFormulario() {
             num5= Number(document.getElementById('prima4').value),
             num6= Number(document.getElementById('retardos4').value),
             num7= Number(document.getElementById('sanciones4').value);
-
         document.getElementById("total4").innerHTML= Math.round(`${work4[2]}`/30*(num2+num3)+num4+(`${sal4}`*num5*0.25));
         document.getElementById("total-pagar4").innerHTML= Math.round(`${work4[2]}`/30*(num2+num3)+num4+(`${sal4}`*num5*0.25)-num6-num7);
-
     })
 
     document.addEventListener("keyup", function () {
