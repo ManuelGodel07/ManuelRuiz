@@ -14,118 +14,121 @@
 </head>
 <body>
 
-    <h1>Plantilla para hacer prenomina</h1>
-    <hr>
-    <button id="trabajadores">Lista de trabajadores</button>
+    <h1 class="animate__animated animate__pulse animate__repeat-2">Plantilla para hacer prenomina</h1>
+    <div>
+        <button id="trabajadores">Lista de trabajadores</button>
+    </div>
 
     <table class="table">
-        <tr>
-            <th colspan="10">Periodo</th>
-        </tr>
-        <tr>
-            <td>Numero</td>
-            <td colspan="2">Datos del empleado</td>
-            <td colspan="7">Ingresos</td>
-            <td colspan="2">Retenciónes</td>
-            <td></td>
-            <td>Observaciónes</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Nombre</td>
-            <td>Puesto</td>
-            <td>Salario Neto</td>
-            <td>Salario Diario</td>
-            <td>Asistencias</td>
-            <td>Dias de compensación</td>
-            <td>Compensaciones</td>
-            <td>Prima vacacional</td>
-            <td>Total de Ingresos</td>
-            <td>Retardos</td>
-            <td>Sanciones</td>
-            <td>Total a pagar</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><p>1</p></td>
-            <td><p id="nombreEmp"></p></td>
-            <td id="puesto"></td>
-            <td id="salario-neto"></td>
-            <td id="salario-diario"></td>
-            <td><input type="number" id="asistencias"></td>
-            <td><input type="number" id="compensacionD"></td>
-            <td><input type="number" id="compensacion"></td>
-            <td><input type="number" id="prima"></td>
-            <td><span id="total"></span></td>
-            <td><input type="number" id="retardos"></td>
-            <td><input type="number" id="sanciones"></td>
-            <td id="total-pagar"></td>
-            <td><input type="text" name="observaciones" id="observaciones"></td>
-        </tr>
-        <tr>
-            <td><p>2</p></td>
-            <td><p id="nombreEmp2"></p></td>
-            <td id="puesto2"></td>
-            <td id="salario-neto2"></td>
-            <td id="salario-diario2"></td>
-            <td><input type="number" id="asistencias2"></td>
-            <td><input type="number" id="compensacionD2"></td>
-            <td><input type="number" id="compensacion2"></td>
-            <td><input type="number" id="prima2"></td>
-            <td><span id="total2"></span></td>
-            <td><input type="number" id="retardos2"></td>
-            <td><input type="number" id="sanciones2"></td>
-            <td id="total-pagar2"></td>
-            <td><input type="text" name="observaciones" id="observaciones2"></td>    
-        </tr>
-        <tr>
-            <td><p>3</p></td>
-            <td><p id="nombreEmp3"></p></td>
-            <td id="puesto3"></td>
-            <td id="salario-neto3"></td>
-            <td id="salario-diario3"></td>
-            <td><input type="number" id="asistencias3"></td>
-            <td><input type="number" id="compensacionD3"></td>
-            <td><input type="number" id="compensacion3"></td>
-            <td><input type="number" id="prima3"></td>
-            <td><span id="total2"></span></td>
-            <td><input type="number" id="retardos3"></td>
-            <td><input type="number" id="sanciones3"></td>
-            <td id="total-pagar3"></td>
-            <td><input type="text" name="observaciones" id="observaciones3"></td>    
-        </tr>
-        <tr>
-            <td><p>4</p></td>
-            <td><p id="nombreEmp4"></p></td>
-            <td id="puesto4"></td>
-            <td id="salario-neto4"></td>
-            <td id="salario-diario4"></td>
-            <td><input type="number" id="asistencias4"></td>
-            <td><input type="number" id="compensacionD4"></td>
-            <td><input type="number" id="compensacion4"></td>
-            <td><input type="number" id="prima4"></td>
-            <td><span id="total2"></span></td>
-            <td><input type="number" id="retardos4"></td>
-            <td><input type="number" id="sanciones4"></td>
-            <td id="total-pagar4"></td>
-            <td><input type="text" name="observaciones" id="observaciones4"></td>    
-        </tr>
-        <tr>
-            <td><p>5</p></td>
-            <td><p id="nombreEmp5"></p></td>
-            <td id="puesto5"></td>
-            <td id="salario-neto5"></td>
-            <td id="salario-diario5"></td>
-            <td><input type="number" id="asistencias5"></td>
-            <td><input type="number" id="compensacionD5"></td>
-            <td><input type="number" id="compensacion5"></td>
-            <td><input type="number" id="prima5"></td>
-            <td><span id="total2"></span></td>
-            <td><input type="number" id="retardos5"></td>
-            <td><input type="number" id="sanciones5"></td>
-            <td id="total-pagar5"></td>
-            <td><input type="text" name="observaciones" id="observaciones5"></td>    
-        </tr>
+        <tbody>
+            <tr class="periodo">
+                <th colspan="14">Primer quincena de Octubre</th>
+            </tr>
+            <tr>
+                <td>Numero</td>
+                <td colspan="2">Datos del empleado</td>
+                <td colspan="7">Ingresos</td>
+                <td colspan="2">Retenciónes</td>
+                <td></td>
+                <td>Observaciónes</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Nombre</td>
+                <td>Puesto</td>
+                <td>Salario Neto</td>
+                <td>Salario Diario</td>
+                <td>Asistencias</td>
+                <td>Dias de compensación</td>
+                <td>Compensaciones</td>
+                <td>Prima vacacional</td>
+                <td>Total de Ingresos</td>
+                <td>Retardos</td>
+                <td>Sanciones</td>
+                <td>Total a pagar</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><p>1</p></td>
+                <td><p id="nombreEmp"></p></td>
+                <td id="puesto"></td>
+                <td id="salario-neto"></td>
+                <td id="salario-diario"></td>
+                <td><input type="number" id="asistencias"></td>
+                <td><input type="number" id="compensacionD"></td>
+                <td><input type="number" id="compensacion"></td>
+                <td><input type="number" id="prima"></td>
+                <td><span id="total"></span></td>
+                <td><input type="number" id="retardos"></td>
+                <td><input type="number" id="sanciones"></td>
+                <td id="total-pagar"></td>
+                <td><textarea name="observaciones" id="observaciones" cols="1" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td><p>2</p></td>
+                <td><p id="nombreEmp2"></p></td>
+                <td id="puesto2"></td>
+                <td id="salario-neto2"></td>
+                <td id="salario-diario2"></td>
+                <td><input type="number" id="asistencias2"></td>
+                <td><input type="number" id="compensacionD2"></td>
+                <td><input type="number" id="compensacion2"></td>
+                <td><input type="number" id="prima2"></td>
+                <td><span id="total2"></span></td>
+                <td class=""><input type="number" id="retardos2"></td>
+                <td><input type="number" id="sanciones2"></td>
+                <td id="total-pagar2"></td>
+                <td><input type="text" name="observaciones" id="observaciones2"></td>    
+            </tr>
+            <tr>
+                <td><p>3</p></td>
+                <td><p id="nombreEmp3"></p></td>
+                <td id="puesto3"></td>
+                <td id="salario-neto3"></td>
+                <td id="salario-diario3"></td>
+                <td><input type="number" id="asistencias3"></td>
+                <td><input type="number" id="compensacionD3"></td>
+                <td><input type="number" id="compensacion3"></td>
+                <td><input type="number" id="prima3"></td>
+                <td><span id="total2"></span></td>
+                <td><input type="number" id="retardos3"></td>
+                <td><input type="number" id="sanciones3"></td>
+                <td id="total-pagar3"></td>
+                <td><input type="text" name="observaciones" id="observaciones3"></td>    
+            </tr>
+            <tr>
+                <td><p>4</p></td>
+                <td><p id="nombreEmp4"></p></td>
+                <td id="puesto4"></td>
+                <td id="salario-neto4"></td>
+                <td id="salario-diario4"></td>
+                <td><input type="number" id="asistencias4"></td>
+                <td><input type="number" id="compensacionD4"></td>
+                <td><input type="number" id="compensacion4"></td>
+                <td><input type="number" id="prima4"></td>
+                <td><span id="total2"></span></td>
+                <td><input type="number" id="retardos4"></td>
+                <td><input type="number" id="sanciones4"></td>
+                <td id="total-pagar4"></td>
+                <td><input type="text" name="observaciones" id="observaciones4"></td>    
+            </tr>
+            <tr>
+                <td><p>5</p></td>
+                <td><p id="nombreEmp5"></p></td>
+                <td id="puesto5"></td>
+                <td id="salario-neto5"></td>
+                <td id="salario-diario5"></td>
+                <td><input type="number" id="asistencias5"></td>
+                <td><input type="number" id="compensacionD5"></td>
+                <td><input type="number" id="compensacion5"></td>
+                <td><input type="number" id="prima5"></td>
+                <td><span id="total2"></span></td>
+                <td><input type="number" id="retardos5"></td>
+                <td><input type="number" id="sanciones5"></td>
+                <td id="total-pagar5"></td>
+                <td><input type="text" name="observaciones" id="observaciones5"></td>    
+            </tr>
+        </tbody>
     </table>
 
 

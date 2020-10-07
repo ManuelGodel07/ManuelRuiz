@@ -1,9 +1,4 @@
-/****function puesto(){
-    let ocupacion = (document.getElementById("puesto").value);
-    document.getElementById("puesto").innerHTML=200;
-}
-puesto();
-
+/**
 function sumar() {
     let diasT= parseInt(document.getElementById("dias").value);
     let suldoD= parseFloat(document.getElementById("sueldo_diario").value);
@@ -32,10 +27,15 @@ const $listaTrabajadores=document.getElementById("trabajadores"),
 
 
     let work1=["Ruiz Meza Luis Manuel","Reclutador",8000],
+        sal1=266.66,
         work2=["Jorge Ramirez Peralta","Auditor",9000],
+        sal2=300,
         work3=["Veronica Smith Juarez","Subdirección",17000],
+        sal3=566.66,
         work4=["Francisco Javier Chavez","Gerente de Ventas",11000],
-        work5=["Juan David Santos Ruiz","Ejecutivo de Mayoreo",6500];
+        sal4=366.66,
+        work5=["Juan David Santos Ruiz","Ejecutivo de Mayoreo",6500],
+        sal5=266.66;
 
 function tabla(){
     let $contendTable= `
@@ -45,18 +45,21 @@ function tabla(){
 
         <div id="modal-activo" class="modal animate__animated animate__flip">
             <aside class="modal-box-activo">
-            <form action="#" name="miForm" onsubmit="return validarFormulario()">
-                Seleccionar
-                <input type="checkbox" id="checkbox" name="empleado1" value="1">
-                <input type="checkbox" id="checkbox" name="empleado2" value="2">
-                <input type="checkbox" id="checkbox" name="empleado3" value="3">
-                <input type="checkbox" id="checkbox" name="empleado4" value="4">
-                <input type="checkbox" id="checkbox" name="empleado5" value="5">
-                <input type="submit" value="Enviar">
-            </form>
-                <table>
+                <form class="select" action="#" name="miForm" onsubmit="return validarFormulario()">
+                    Seleccionar
+                    <br>
+                    <br>
+                    <input type="checkbox" id="checkbox" name="empleado1" value="1">
+                    <input type="checkbox" id="checkbox" name="empleado2" value="2">
+                    <input type="checkbox" id="checkbox" name="empleado3" value="3">
+                    <input type="checkbox" id="checkbox" name="empleado4" value="4">
+                    <input type="checkbox" id="checkbox" name="empleado5" value="5">
+                    <input type="submit" value="Enviar">
+                </form>
+                <table class="tab">
+                <tbody>
                     <tr>
-                        <th colspan="4">Septiembre</th>
+                        <th colspan="3">Octubre</th>
                     </tr>
                     <tr>
                     <td>Nombre</td>
@@ -84,16 +87,15 @@ function tabla(){
                         <td>${work4[2]}</td>
                     </tr>
                     <tr>
-                    <td>${work5[0]}</td>
-                    <td>${work5[1]}</td>
-                    <td>${work5[2]}</td>
-                </tr>
-
+                        <td>${work5[0]}</td>
+                        <td>${work5[1]}</td>
+                        <td>${work5[2]}</td>
+                    </tr>
+                <tbody>
                 </table>
-                <a href="#">cerrar</a>
                 </aside>			
+                <a href="#" class="close">cerrar</a>
                 </div>
-                <div id="info"></div>
         </section>`;
 $listaTrabajadores.insertAdjacentHTML("beforebegin",$contendTable);
 };
@@ -116,7 +118,7 @@ function validarFormulario() {
         document.getElementById("nombreEmp").innerHTML= `${work1[0]}`;
         document.getElementById("puesto").innerHTML= `${work1[1]}`;
         document.getElementById("salario-neto").innerHTML= `${work1[2]}`;
-        document.getElementById("salario-diario").innerHTML= `${work1[2]/30}`;
+        document.getElementById("salario-diario").innerHTML= `${sal1}`;
         return false;
     }else{
     }
@@ -124,7 +126,7 @@ function validarFormulario() {
         document.getElementById("nombreEmp2").innerHTML= `${work2[0]}`;
         document.getElementById("puesto2").innerHTML= `${work2[1]}`;
         document.getElementById("salario-neto2").innerHTML= `${work2[2]}`;
-        document.getElementById("salario-diario2").innerHTML= `${work2[2]/30}`;
+        document.getElementById("salario-diario").innerHTML= `${sal12}`;
         return false;
     }else{
     }
@@ -132,7 +134,7 @@ function validarFormulario() {
         document.getElementById("nombreEmp3").innerHTML= `${work3[0]}`;
         document.getElementById("puesto3").innerHTML= `${work3[1]}`;
         document.getElementById("salario-neto3").innerHTML= `${work3[2]}`;
-        document.getElementById("salario-diario3").innerHTML= `${work3[2]/30}`;
+        document.getElementById("salario-diario").innerHTML= `${sal3}`;
         return false;
     }else{
     }
@@ -140,7 +142,7 @@ function validarFormulario() {
         document.getElementById("nombreEmp4").innerHTML= `${work4[0]}`;
         document.getElementById("puesto4").innerHTML= `${work4[1]}`;
         document.getElementById("salario-neto4").innerHTML= `${work4[2]}`;
-        document.getElementById("salario-diario4").innerHTML= `${work4[2]/30}`;
+        document.getElementById("salario-diario").innerHTML= `${sal4}`;
         return false;
     }else{
     }
@@ -148,14 +150,11 @@ function validarFormulario() {
         document.getElementById("nombreEmp5").innerHTML= `${work5[0]}`;
         document.getElementById("puesto5").innerHTML= `${work5[1]}`;
         document.getElementById("salario-neto5").innerHTML= `${work5[2]}`;
-        document.getElementById("salario-diario5").innerHTML= `${work5[2]/30}`;
+        document.getElementById("salario-diario").innerHTML= `${sal5}`;
         return false;
     }else{
     }
     }
-    
-    
-    
 
     //suma de nomina
     document.addEventListener("keyup", function () {
@@ -166,9 +165,8 @@ function validarFormulario() {
             num6= Number(document.getElementById('retardos').value),
             num7= Number(document.getElementById('sanciones').value);
 
-        document.getElementById("total").innerHTML= `${work1[2]}`/30*(num2+num3)+num4+(num5*0.25);
-        document.getElementById("total-pagar").innerHTML= `${work1[2]}`/30*(num2+num3)+num4+(num5*0.25)-num6-num7;
-
+        document.getElementById("total").innerHTML= Math.round(`${work1[2]}`/30*(num2+num3)+num4+(`${sal1}`*num5*0.25));
+        document.getElementById("total-pagar").innerHTML= Math.round(`${work1[2]}`/30*(num2+num3)+num4+(`${sal1}`*num5*0.255)-num6-num7);
     })
 
     document.addEventListener("keyup", function () {
@@ -179,8 +177,8 @@ function validarFormulario() {
             num6= Number(document.getElementById('retardos2').value),
             num7= Number(document.getElementById('sanciones2').value);
 
-        document.getElementById("total2").innerHTML= `${work2[2]}`/30*(num2+num3)+num4+(num5*0.25);
-        document.getElementById("total-pagar2").innerHTML= `${work2[2]}`/30*(num2+num3)+num4+(num5*0.25)-num6-num7;
+        document.getElementById("total2").innerHTML= Math.round(`${work2[2]}`/30*(num2+num3)+num4+(`${sal2}`*num5*0.25));
+        document.getElementById("total-pagar2").innerHTML= Math.round(`${work2[2]}`/30*(num2+num3)+num4+(`${sal2}`*num5*0.25)-num6-num7);
 
     })
 
@@ -192,8 +190,8 @@ function validarFormulario() {
             num6= Number(document.getElementById('retardos3').value),
             num7= Number(document.getElementById('sanciones3').value);
 
-        document.getElementById("total3").innerHTML= `${work3[2]}`/30*(num2+num3)+num4+(num5*0.25);
-        document.getElementById("total-pagar3").innerHTML= `${work3[2]}`/30*(num2+num3)+num4+(num5*0.25)-num6-num7;
+        document.getElementById("total3").innerHTML= Math.round(`${work3[2]}`/30*(num2+num3)+num4+(`${sal3}`*num5*0.25));
+        document.getElementById("total-pagar3").innerHTML= Math.round(`${work3[2]}`/30*(num2+num3)+num4+(`${sal3}`*num5*0.25)-num6-num7);
 
     })
 
@@ -205,8 +203,8 @@ function validarFormulario() {
             num6= Number(document.getElementById('retardos4').value),
             num7= Number(document.getElementById('sanciones4').value);
 
-        document.getElementById("total4").innerHTML= `${work4[2]}`/30*(num2+num3)+num4+(num5*0.25);
-        document.getElementById("total-pagar4").innerHTML= `${work4[2]}`/30*(num2+num3)+num4+(num5*0.25)-num6-num7;
+        document.getElementById("total4").innerHTML= Math.round(`${work4[2]}`/30*(num2+num3)+num4+(`${sal4}`*num5*0.25));
+        document.getElementById("total-pagar4").innerHTML= Math.round(`${work4[2]}`/30*(num2+num3)+num4+(`${sal4}`*num5*0.25)-num6-num7);
 
     })
 
@@ -218,8 +216,8 @@ function validarFormulario() {
             num6= Number(document.getElementById('retardos5').value),
             num7= Number(document.getElementById('sanciones5').value);
 
-        document.getElementById("total5").innerHTML= `${work5[2]}`/30*(num2+num3)+num4+(num5*0.25);
-        document.getElementById("total-pagar5").innerHTML= `${work5[2]}`/30*(num2+num3)+num4+(num5*0.25)-num6-num7;
+        document.getElementById("total5").innerHTML= Math.round(`${work5[2]}`/30*(num2+num3)+num4+(`${sal5}`*num5*0.25));
+        document.getElementById("total-pagar5").innerHTML= Math.round(`${work5[2]}`/30*(num2+num3)+num4+(`${sal5}`*num5*0.25)-num6-num7);
 
     })
 
