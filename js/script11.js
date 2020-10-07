@@ -29,3 +29,4 @@ function findMe(){
 	navigator.geolocation.getCurrentPosition(localizacion,error);
 
 }
+getGeolocation("geolocation");
