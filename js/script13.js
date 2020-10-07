@@ -166,7 +166,7 @@ function validarFormulario() {
             num7= Number(document.getElementById('sanciones').value);
 
         document.getElementById("total").innerHTML= Math.round(`${work1[2]}`/30*(num2+num3)+num4+(`${sal1}`*num5*0.25));
-        document.getElementById("total-pagar").innerHTML= Math.round(`${work1[2]}`/30*(num2+num3)+num4+(`${sal1}`*num5*0.255)-num6-num7);
+        document.getElementById("total-pagar").innerHTML= Math.round(`${work1[2]}`/30*(num2+num3)+num4+(`${sal1}`*num5*0.25)-num6-num7);
     })
 
     document.addEventListener("keyup", function () {
@@ -192,7 +192,6 @@ function validarFormulario() {
 
         document.getElementById("total3").innerHTML= Math.round(`${work3[2]}`/30*(num2+num3)+num4+(`${sal3}`*num5*0.25));
         document.getElementById("total-pagar3").innerHTML= Math.round(`${work3[2]}`/30*(num2+num3)+num4+(`${sal3}`*num5*0.25)-num6-num7);
-
     })
 
     document.addEventListener("keyup", function () {
