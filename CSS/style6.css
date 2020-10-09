@@ -31,6 +31,7 @@ section{
 	justify-content: center;
 	align-items:center;
 	background-color: rgba(237, 237, 238, 0.63);
+	border: solid black 2px;
 }
 
 .modal-diseño:target{
@@ -65,4 +66,94 @@ section{
 	justify-content: center;
 	align-items:center;
 	background-color: rgba(237, 237, 238, 0.63);
+}
+
+
+
+
+
+
+
+/*************************************************/
+/*------------------------------------------------------------------*/
+
+.conteiner {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	position: relative;
+}
+
+.titulo{
+	height: 10%;
+	color:black;
+	font-weight: bold;
+}
+.conteiner .contenedor-principal {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	position: relative;
+	height: 90%;
+}
+.conteiner .contenedor-principal .flecha-izquierda,
+.conteiner .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	height: 20%;
+	line-height: 40px;
+	width: 4%;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.conteiner .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.conteiner .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.conteiner .contenedor-carousel {
+	width: 100%;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.conteiner .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+}
+
+.conteiner .contenedor-carousel .carousel .pic {
+	min-width: 30%;
+	align-items: stretch;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.conteiner .contenedor-carousel .carousel .pic:hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.conteiner .contenedor-principal .flecha-izquierda:hover,
+.conteiner .contenedor-principal .flecha-derecha:hover {
+	height: 25%;
+	width: 5%;
+}
+
+.conteiner .contenedor-carousel .carousel .pic img {
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
 }
