@@ -121,19 +121,104 @@ section{
 
 
 /******************************************************MEDIA QUERYS"****************************/
+
 @media screen and (max-width: 125em){
+
 	body{
-		height: 2010px;
-		border: black 10px solid;
+		width: 100%;
 	}
 	h1{
-		font-size: 6em;
+		font-size: 4em;
 	}
-	.fiesta{
-		font-size: 5em;
-		border: black 5px solid;
-
+	section{
+		font-size: 3em;
 	}
+	p{
+		font-size: .4em;
+		margin: 0;
+	}
+	a{
+		font-size: .5em;
+	}
+}
+@media screen and (max-width: 75em){
+	h1{
+		font-size: 3.7em;
+	}
+	section{
+		font-size: 2.2em;
+	}
+	p{
+		font-size: .5em;
+		margin: 0;
+		}
 
-
+}
+@media screen and (max-width: 64em){
+	h1{
+		font-size: 3.2em;
+	}
+	section{
+		font-size: 2em;
+	}
+	p{
+		font-size: .6em;
+		margin: 0;
+	}
+	a{
+		font-size: .5em;
+	}
+}
+@media screen and (max-width: 50em){
+	h1{
+		font-size: 2.3em;
+	}
+	section{
+		font-size: 1.5em;
+	}
+	p{
+		font-size: .5em;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 48em){
+	h1{
+		font-size: 2em;
+	}
+	section{
+		font-size: 1.3em;
+	}
+	p{
+		font-size: .6em;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 37em){
+	section{
+		font-size: 1.1em;
+	}
+@media screen and (max-width: 30em){
+	h1{
+		font-size: 1.3em;
+	}
+	section{
+		font-size: .9em;
+	}
+	p{
+		font-size: .7em;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 20em){
+	h1{
+		font-size: 1em;
+	}
+	section{
+		font-size: .8em;
+	}
+	p{
+		font-size: .6em;
+		margin: 0;
+	}
+}
 }
