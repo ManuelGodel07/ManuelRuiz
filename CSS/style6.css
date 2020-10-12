@@ -6,51 +6,25 @@
 body{
     background: url("../images/creative.png") center / 100% 100% no-repeat;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
 }
 section{
-    width: 70vw;
+    width: 70%;
 }
-
-.modal-fiesta:target{
+.modal-box-fiesta, .modal-box-diseño, .modal-box-int{
+	width: 80%;
+	height: 80%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items:center;
-
-}
-.modal-box-fiesta{
-	width: 90vw;
-	height: 90vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	background-color: rgba(237, 237, 238, 0.63);
+	background-color: rgba(178, 178, 209, 0.63);
 	border: solid black 2px;
 }
-
-.modal-diseño:target{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-
-}
-.modal-box-diseño{
-	width: 90vw;
-	height: 90vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	background-color: rgba(237, 237, 238, 0.63);
-}
-
 .modal:target{
 	display: flex;
 	flex-direction: column;
@@ -58,37 +32,24 @@ section{
 	align-items:center;
 
 }
-.modal-box{
-	width: 90vw;
-	height: 90vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	background-color: rgba(237, 237, 238, 0.63);
-}
-
-
-
-
-
-
 
 /*************************************************/
 /*------------------------------------------------------------------*/
 
 .conteiner {
+	width: 100%;
+	height: inherit;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	width: 100%;
 	align-items: center;
 	position: relative;
 }
-
 .titulo{
 	height: 10%;
-	color:black;
+	color: black;
+	font-size: 2em;
+	font-style: italic;
 	font-weight: bold;
 }
 .conteiner .contenedor-principal {
@@ -98,10 +59,10 @@ section{
 	width: 100%;
 	align-items: center;
 	position: relative;
-	height: 90%;
+	height: 70%;
 }
-.conteiner .contenedor-principal .flecha-izquierda,
-.conteiner .contenedor-principal .flecha-derecha {
+.conteiner .contenedor-principal .flecha-izquierda, .conteiner .contenedor-principal .flecha-izquierda2, .conteiner .contenedor-principal .flecha-izquierda3,
+.conteiner .contenedor-principal .flecha-derecha, .conteiner .contenedor-principal .flecha-derecha2, .conteiner .contenedor-principal .flecha-derecha3 {
 	position: absolute;
 	border: none;
 	height: 20%;
@@ -111,49 +72,68 @@ section{
 	z-index: 500;
 	transition: .2s ease all;
 }
-
-.conteiner .contenedor-principal .flecha-izquierda {
+.conteiner .contenedor-principal .flecha-izquierda, .conteiner .contenedor-principal .flecha-izquierda2, .conteiner .contenedor-principal .flecha-izquierda3 {
 	left: 0;
 }
 
-.conteiner .contenedor-principal .flecha-derecha {
+.conteiner .contenedor-principal .flecha-derecha, .conteiner .contenedor-principal .flecha-derecha2, .conteiner .contenedor-principal .flecha-derecha3 {
 	right: 0;
 }
 /* ---- ----- ----- Carousel ----- ----- ----- */
-.conteiner .contenedor-carousel {
+.conteiner .contenedor-carousel, .conteiner .contenedor-carousel2, .conteiner .contenedor-carousel3 {
 	width: 100%;
 	overflow: hidden;
 	scroll-behavior: smooth;
 	display: flex;
 	flex-flow: row wrap;
+	height: 100%;
 }
 
-.conteiner .contenedor-carousel .carousel {
+.conteiner .contenedor-carousel .carousel, .conteiner .contenedor-carousel2 .carousel2, .conteiner .contenedor-carousel3 .carousel3 {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: stretch;
 }
 
-.conteiner .contenedor-carousel .carousel .pic {
+.conteiner .contenedor-carousel .carousel .pic, .conteiner .contenedor-carousel2 .carousel2 .pic2, .conteiner .contenedor-carousel3 .carousel3 .pic3{
 	min-width: 30%;
 	align-items: stretch;
 	transition: .3s ease all;
 	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
 }
 
-.conteiner .contenedor-carousel .carousel .pic:hover {
+.conteiner .contenedor-carousel .carousel .pic:hover, .conteiner .contenedor-carousel2 .carousel2 .pic2:hover, .conteiner .contenedor-carousel3 .carousel3 .pic3:hover{
 	transform: scale(1.2);
 	transform-origin: center;
 }
 
-.conteiner .contenedor-principal .flecha-izquierda:hover,
-.conteiner .contenedor-principal .flecha-derecha:hover {
+.conteiner .contenedor-principal .flecha-izquierda:hover, .conteiner .contenedor-principal .flecha-izquierda2:hover, .conteiner .contenedor-principal .flecha-izquierda3:hover,
+.conteiner .contenedor-principal .flecha-derecha:hover, .conteiner .contenedor-principal .flecha-derecha2:hover, .conteiner .contenedor-principal .flecha-derecha3:hover{
 	height: 25%;
 	width: 5%;
 }
 
-.conteiner .contenedor-carousel .carousel .pic img {
+.conteiner .contenedor-carousel .carousel .pic img, .conteiner .contenedor-carousel2 .carousel2 .pic2 img, .conteiner .contenedor-carousel3 .carousel3 .pic3 img {
 	width: 100%;
 	height: 100%;
 	vertical-align: center;
+}
+
+
+/******************************************************MEDIA QUERYS"****************************/
+@media screen and (max-width: 125em){
+	body{
+		height: 2010px;
+		border: black 10px solid;
+	}
+	h1{
+		font-size: 6em;
+	}
+	.fiesta{
+		font-size: 5em;
+		border: black 5px solid;
+
+	}
+
+
 }
