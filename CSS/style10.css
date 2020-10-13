@@ -92,3 +92,19 @@ td{
 	align-self: auto;
 	background: red;
 }
+
+
+@media screen and (max-width: 48em) {
+	body{
+		width: 100%;
+		font-size: .3em;
+
+	}
+	h1{
+		font-size: .1em;
+	}
+	td{
+		font-size: .3em;
+
+	}
+}
