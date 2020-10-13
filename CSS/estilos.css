@@ -113,8 +113,8 @@ input.src:hover{
     bottom: 0;
 	right: 0;
 	left: 0;
-    background-color: rgba(117, 159, 199, 0.534);
-    width: 30%;
+    background-color: rgba(68, 126, 180, 0.534);
+    width: 25%;
     transition: transform .3s ease;
     transform: translate(-100%,0%);
 	display: flex;
