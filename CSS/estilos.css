@@ -414,7 +414,7 @@ input.src:hover{
 	}
 	.men a{
 		padding: 1em;
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 }
 /***********************************************************************************************/
@@ -495,7 +495,7 @@ input.src:hover{
 	}
 	.men a{
 		padding: 1em;
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 }
 /***********************************************************************************************/
@@ -544,7 +544,7 @@ input.src:hover{
 	}
 	.men a{
 		padding: .5em;
-		font-size: 1em;
+		font-size: .8em;
 	}
 }
 /***********************************************************************************************/
@@ -613,12 +613,7 @@ input.src:hover{
 		height: 2em;
 	}
 	.men a{
-		padding: .5em;
-		font-size: .8em;
+		padding: 3em;
+		font-size: .5em;
 	}
-}
-
-@media screen and (max-width: 20em) {
-
-
 }
