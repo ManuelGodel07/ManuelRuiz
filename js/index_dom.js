@@ -5,4 +5,3 @@ d.addEventListener("DOMContentLoaded",(e)=>{
     hamburguerMenu(".panel-btn",".panel",".menu a");
 });
 
-console.log("hola mundo");

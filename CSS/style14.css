@@ -1,0 +1,19 @@
+
+
+section{
+    border: solid gray 3px;
+}
+.contenedor-carousel{
+    border: solid red 3px;
+}
+.carousel{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+}
+.pic{
+    border: solid gray 3px;
+    height: 40vh;
+    width: 100vw;
+}
