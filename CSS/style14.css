@@ -1,19 +1,46 @@
-
-
-section{
-    border: solid gray 3px;
+html{
+    scroll-behavior: smooth; 
+    box-sizing: border-box;
 }
-.contenedor-carousel{
-    border: solid red 3px;
-}
-.carousel{
-    display: flex;
-    flex-flow: row;
+body{
+    display: flexbox;
+    flex-flow: row wrap;
     justify-content: center;
+    text-align: center;
+    align-content: space-between;
+    overflow-x: hidden;
+}
+.form{
+    display: flexbox;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: space-between;
+    overflow-x: hidden;
+}
+.conteiner{
+    height: 40vh;
+}
+
+.carousel{
+    height: inherit;
+    display: flex;
+    flex-flow: column wrap;
+    border: solid rgb(29, 63, 175) 3px;
+
 
 }
 .pic{
-    border: solid gray 3px;
-    height: 40vh;
-    width: 100vw;
+    width:100vw;
+    height: 100%;
+    border: solid rgb(66, 47, 47) 3px;
+}
+
+.scroll-top-btn{
+    position: fixed;
+    z-index: 999;
+    right: calc(4.25rem+ 1vw);
+    bottom: 1vh;
+    width: 4rem;
+    height: 4rem;
 }
