@@ -373,7 +373,7 @@ input.src:hover{
 	}
 	.men a{
 		padding: 1em;
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 }
 
@@ -614,6 +614,6 @@ input.src:hover{
 	}
 	.men a{
 		padding: 3em;
-		font-size: .5em;
+		font-size: .3em;
 	}
 }
