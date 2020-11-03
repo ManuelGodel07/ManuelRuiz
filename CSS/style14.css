@@ -26,7 +26,6 @@ body{
     height: inherit;
     display: flex;
     flex-flow: column wrap;
-    border: solid rgb(29, 63, 175) 3px;
 
 
 }
