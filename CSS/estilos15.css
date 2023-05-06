@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Balsamic Sans';
+}
+header, .level{
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+    padding: 0 0;
+}
+
+.container{
+    max-width: 90%;
+    margin: auto;
+    padding: 5% 0 0 0   ;
+}
+.question{
+    max-width: 100%;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: 10px 0;
+}
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+label:hover{
+    background: #eaeaea;
+}
+button{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
