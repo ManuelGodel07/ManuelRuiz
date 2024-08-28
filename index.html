@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="es-MEX">
 	<head>
 		<meta charset="utf-8">
@@ -12,68 +12,66 @@
 		<link rel="stylesheet" type="text/css" href="CSS\estilos.css">
 		<link rel="shortcut icon" href="favicon/man.ico">
 		<title>LinguTalk</title>
-	<script>
-		"use strict";
-		!function() {
-		var t = window.driftt = window.drift = window.driftt || [];
-		if (!t.init) {
-			if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-			t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-			t.factory = function(e) {
-			return function() {
-				var n = Array.prototype.slice.call(arguments);
-				return n.unshift(e), t.push(n), t;
-			};
-			}, t.methods.forEach(function(e) {
-			t[e] = t.factory(e);
-			}), t.load = function(t) {
-			var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-			o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-			var i = document.getElementsByTagName("script")[0];
-			i.parentNode.insertBefore(o, i);
-			};
-		}
-		}();
-		drift.SNIPPET_VERSION = '0.3.1';
-		drift.load('fxe584v5mp75');
-	</script>
+		<script>
+			"use strict";
+			!function() {
+			var t = window.driftt = window.drift = window.driftt || [];
+			if (!t.init) {
+				if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+				t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+				t.factory = function(e) {
+				return function() {
+					var n = Array.prototype.slice.call(arguments);
+					return n.unshift(e), t.push(n), t;
+				};
+				}, t.methods.forEach(function(e) {
+				t[e] = t.factory(e);
+				}), t.load = function(t) {
+				var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+				o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+				var i = document.getElementsByTagName("script")[0];
+				i.parentNode.insertBefore(o, i);
+				};
+			}
+			}();
+			drift.SNIPPET_VERSION = '0.3.1';
+			drift.load('fxe584v5mp75');
+		</script>
 
 	</head>
 	<body>
 		<header>
 			<section class="head-box">
-				<div class="text-title-page">Bienvenido a LinguTalk</div>
+				<div class="text-title-page" id="welcomeMsg">Bienvenido a LinguTalk</div>
 				<div><input type="text" name="search" placeholder="Busqueda" id="#" class="src" autocomplete="off"></div>
-				<div><img src="https://firebasestorage.googleapis.com/v0/b/fire117-7b888.appspot.com/o/web%2FbrandButton.png?alt=media&token=e622cbc2-fa4e-4e02-a81f-f4ef2ad805b0" class="logo" alt="MR"></div>
+				<div><img src="https://firebasestorage.googleapis.com/v0/b/fire117-7b888.appspot.com/o/web%2FbrandButton.png?alt=media&token=e622cbc2-fa4e-4e02-a81f-f4ef2ad805b0" class="logo" alt="LinguTalk"></div>
 			</section>
 		</header>
 			<button class=" panel-btn hamburger hamburger--vortex" type="button">
-				<span class="hamburger-box">
 				<span class="hamburger-inner"></span>
-				</span>
 			</button>
 			<aside class="panel">
 				<nav class="men">
 					<a href="HTML/CVManuelRuiz.pdf">Curriculum Vitae</a>
-					<a href="HTML/proyectos.html">Proyectos concluidos</a>
+					<a href="HTML/proyectos.html">Proyectos</a>
 					<a href="https://api.whatsapp.com/send?phone=525540145714&text=Hola%20Manuel,%20me%20pareci%C3%B3%20asombrosa%20tu%20paguina">Contacto</a>
-					<a href="HTML/evaluacion.html">Evaluaciónes</a>
+					<a href="#">Evaluaciónes</a>
 					<a href="#">Agradecimientos</a>
 				</nav>
 			</aside>
 		<div class="conteiner">
 			<div class="pic">
-				<a href="HTML\nomina.html" class="button-text">Ya tengo cuenta</a>
+				<a href="#" class="button-text">Ya tengo cuenta</a>
 			</div>
 			<div class="pic">
-				<a href="HTML/perfiles-reclutados.html" class="button-text">Crear cuenta</a>
+				<a href="#" class="button-text">Crear cuenta</a>
 			</div>
 		</div>
 		<div class="company-description">
 			<div class= "text">
 				<a class="text-title-description">Sobre nosotros</a>
 				<a class="text-description-a">Somos una app de aprendizaje de ingles</a>
-				<a class="text-description-b">LinguTalk es una app centrada en las personas. Nuestro  compromiso es transformar la forma de aprendizaje tradicional del inglés en una experiencia de aprendizaje contundente y divertida, agregamos valor en nuestra app haciendo que cada interacción sea beneficiosa. Nuestro plan de estudios y metodología de ejercicios nos distingue de nuestros competidores gracias a que logramos consolidar a largo plazo el aprendizaje nuestras lecciones, todo con tan solo completar una leccion al dia.</a>
+				<a class="text-description-b">LinguTalk es una app centrada en las personas. Nuestro compromiso es transformar la forma de aprendizaje tradicional del inglés en una experiencia de aprendizaje contundente y divertida, agregamos valor en nuestra app haciendo que cada interacción sea beneficiosa. Nuestro plan de estudios y metodología de ejercicios nos distingue de nuestros competidores gracias a que logramos consolidar a largo plazo el aprendizaje nuestras lecciones, todo con tan solo completar una leccion al dia.</a>
 			</div>
 			<div class="image-description">
 				<img src="https://firebasestorage.googleapis.com/v0/b/fire117-7b888.appspot.com/o/web%2F8602650.png?alt=media&token=e4c2059d-aeed-4ff8-8600-2545df102bfd" class="logo-description" alt="Image description">
@@ -85,36 +83,44 @@
 				<article class="intel-title">🥇 Nuestra propuesta se basa en:</article>
 			</div>
 			<div class="proposal-text">
-				<div class="brother-text"><a class="brother-text-styles" href="HTML\geolocalizacion.html">📖 Plan de estudios estructurado</a></div>
-				<div class="brother-text"><a class="brother-text-styles" href="HTML/covid.html">👩🏼‍🏫 Consolidación del aprendizaje a través de la práctica</a></div>
-				<div class="brother-text"><a class="brother-text-styles" href="HTML/index12.html">🚀🤳🏻 Gamificación - Adaptamos la mecánica de los juegos al ámbito educativo-profesional con el fin de conseguir mejores aprendizajes</a></div>
+				<div class="brother-text">
+					<a class="brother-text-styles" href="HTML/curriculum.html">📖 Plan de estudios estructurado</a>
+					<img src="images/curriculumOrder.png" class="curriculum-styles" onclick="giveDate()" id="handlerNavigation">
+				</div>
+				<div class="brother-text">
+					<a class="brother-text-styles" href="HTML/practice.html">👩🏼‍🏫 Consolidación del aprendizaje a través de la práctica</a>
+					<img src="images/workOut.png" class="curriculum-styles" id="myTestingImage">
+				</div>
+				<div class="brother-text">
+					<a class="brother-text-styles" href="HTML/gamification.html">🚀🤳🏻 Gamificación - Adaptamos la mecánica de los juegos al ámbito educativo-profesional con el fin de conseguir mejores aprendizajes</a>
+					<img src="images/rompecabezas.png" class="curriculum-styles">
+				</div>
 			</div>
 		</div>
 		<div class="footer">
-			<ul className='card-footer'>
-				<li>
-					<a className='title-footer'>Nuevos usuarios</a>
+			<ul class='card-footer'>
+				<li class='title-footer'>
+					<a >Nuevos usuarios</a>
 				</li>
 				<li>
-					<a href='./screen/Suscriptions.js' rel='noopener noreferrer'>Suscripciones</a>
+					<a href='/HTML/suscriptions.html' rel='noopener noreferrer'>Suscripciones</a>
 				</li>
 			</ul>
-			<ul className='card-footer'>
-				<li className='title-footer'>Vinculos</li>
-				<li href='./screen/Colleguelinker.js'>Colegios</li>
-				<li>Compañias</li>
+			<ul class='card-footer'>
+				<li class='title-footer'>Vinculos</li>
+				<li><a href='/HTML/collegues.html' rel="noopener ">Colegios</a></li>
+				<li><a href='/HTML/companies.html' rel="noopener ">Empresas</a></li>
 			</ul>
-			<ul className='card-footer'>
-				<li className='title-footer'>Compañia</li>
-				<li>Sobre nosotros</li>
-				<li>Trabajo</li>
-				<li>Blog</li>
+			<ul class='card-footer'>
+				<li class='title-footer'>Compañia</li>
+				<li><a href='/HTML/aboutUs.html' rel="noopener ">Sobre nosotros</a></li>
+				<li><a href='/HTML/jobSearcher.html' rel="noopener ">Bolsa de trabajo</a></li>
+				<li><a href='/HTML/feed.html' rel="noopener ">Feed</a></li>
 			</ul>
-			<ul className='card-footer'>
-				<li className='title-footer'><a href="https://api.whatsapp.com/send?phone=5215581216691&text=Hola me comunico por la aplicacion LinguTalk"></a>Servicio al cliente</li>
-				<li href='https://api.whatsapp.com/send?phone=5215581216691&text=Hola me comunico por la aplicacion LinguTalk'>Contactanos</li>
-				<li>FAQs</li>
-				<li>Cupones</li>
+			<ul class='card-footer'>
+				<li class='title-footer'><a href="https://api.whatsapp.com/send?phone=5215581216691&text=Hola me comunico por la aplicacion LinguTalk"></a>Servicio al cliente</li>
+				<li><a href='https://api.whatsapp.com/send?phone=5215581216691&text=Hola me comunico por la aplicacion LinguTalk'>Contactanos</a></li>
+				<li><a href='/HTML/faqs.html' rel="noopener ">FAQs</a></li>
 				<li><a href="app-ads.txt">app-ads.txt</a></li>
 			</ul>
 		</div>
@@ -123,6 +129,7 @@
 
 		<script src="js/index_dom.js" type="module"></script>
 		<script src="js/hamburguesa.js"></script>
+		<script src="js/working.js"></script>
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

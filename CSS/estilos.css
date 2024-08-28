@@ -15,10 +15,12 @@ body{
 	font-family: monospace;
 	background-color: #FFFFFF;
 }
+
 header{
 	width: 100%;
-	height: 30vh;
+	height: 30%;
 }
+
 .head-box{
 	height: 100%;
 	padding: 0px;
@@ -28,21 +30,24 @@ header{
 	justify-content: space-around;
 	align-items: center;
 }
+
 .text-title-page{
-	height: 20%;
-    font-size: 5vh;
+    font-size: 2em;
+	max-width: 20vw;
+	text-align: center;
 }
 .logo{
-	width: 20vh;
-	height: 20vh;
+	width: 8em;
+	height: 8em;
 }
+
 input.src{
 	outline: none;
 	font-size: 1.5em;
 	border-radius: 25px;
 	color: #444;
 	border: 3px solid rgb(66, 66, 66);
-	width: 60px;
+	width: 20vh;
 	transition: all .5s;
 }
 
@@ -52,7 +57,6 @@ input.src:hover{
 	border: #555555;
 	box-shadow: 0 0 5px #6dcff680;
 }
-
 
 .panel{
     position: fixed;
@@ -69,9 +73,11 @@ input.src:hover{
 	justify-content: space-between;
 	align-items: center;
 }
+
 .panel.is-active{
     transform: translate(0,0);
 }
+
 .panel-btn{
     position: fixed;
     z-index: 999;
@@ -85,17 +91,6 @@ input.src:hover{
 	justify-content: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .men{
     width: inherit;
     display: flex;
@@ -104,6 +99,7 @@ input.src:hover{
     align-content: center;
 	text-align: center;
 }
+
 .men a{
     padding: 2em;
     width: inherit;
@@ -119,24 +115,21 @@ input.src:hover{
     color: black;
 }
 
-
-
-
 .conteiner {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	width: 100%;
-	height: 35vh;
+	height: 20em;
 	align-items: center;
-	padding: 10px;
+	padding: 1em;
 }
 
 .pic {
 	display: flex;
-	width: 22vh;
-	height: 22vh;
-	border: 2px;
+	width: 15em;
+	height: 15em;
+	border: 0.1em;
 	border-radius:15px;
 	background-color: #1cb0f6;
 	justify-content: center;
@@ -153,7 +146,7 @@ input.src:hover{
 	text-decoration: none;
 	color: #000000;
 	width: 100%;
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: bold;
 	text-align: center;
 }
@@ -163,7 +156,7 @@ input.src:hover{
 	flex-flow: column wrap;
 	justify-content: space-around;
 	align-items: center;
-	height: 65vh;
+	height: 30em;
 	width: 100%;
 	margin:0;
 	padding:15px;
@@ -198,26 +191,26 @@ input.src:hover{
 	flex-direction: column;
 	justify-content: space-evenly;
 	text-decoration: none;	
-	padding: 10px;
-	height: 50vh;
-	width: 90%;
+	padding: 1em;
+	height: 30em;
+	width: 95%;
 	align-items: center;
 }
 .intel-container{
 	height: 15%;
 }
 .intel-title{
-	font-size: 32px;
+	font-size: 2em;
 }
 .proposal-text{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	align-items: center;
 	text-decoration: none;	
-	padding: 10px;
+	padding: 1em;
 	height: 80%;
 	width: 100%;
-	align-items: center;
 }
 
 .brother-text{
@@ -226,308 +219,276 @@ input.src:hover{
 	height: 90%;
 	background-color: #1cb0f6;
 	border: 2px;
+	line-height: 1em;
 	border-radius:15px;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	align-content: center;
 	transition: .3s ease all;
 	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
-
 }
+
 .brother-text-styles{
 	text-decoration: none;
 	color: #000000;
 	width: 100%;
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: bold;
 	text-align: center;
 }
+
 .brother-text:hover {
 	transform: scale(1.1);
 	transform-origin: center;
 	transition: 0.5s ease-out;
 }
+.curriculum-styles{
+	height: 67%;
+	width: 67%;
+}
 .footer{
 	width: 100%;
-	height: 30vh;
+	height: 15em;
 	background-color: #1cb0f6;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	padding: 10px;
-
 }
 .card-footer{
+	list-style-type: none;
 	height: 100%;
 	width: 20%;
-	background-color: #FFFFFF;
 	padding: 10px;
+	background-color: #1cb0f6;
 
 }
 .title-footer{
 	font-size: 32px;
 	font-weight: bold;
 }
+.footer ul.card-footer li a {
+	text-decoration: none;
+	color: inherit;
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	background: none; 
+	border: none;
+}
+.pic .button-text{
+	text-decoration: none;
+}
 /*---- Media Queries -----*/
-
 
 @media screen and (max-width: 75em) {
 	header{
-		height: 20em;
+		height: 12em
 	}
-	.logo{
-		width: 9em;
-		height: 9em;
+	.text-title-page{
+		font-size: 3em;
+		max-width: 25vw;
+		line-height: 1em;
 	}
-	.head-box{
-		height: 50%;
+	.text{
+		font-size: 1.3em;
 	}
-	.element{
-		height: 50%;
+	.conteiner{
+		height: 15em;
+	}
+	.pic {
+		width: 11em;
+		height: 11em;
+	}
+	.company-description{
+		height: 28em;
+		width: 100%;
+	}
+	.text-title-description{
 		font-size: 2em;
 	}
-	.men a{
-		padding: 1em;
-		font-size: 1.5em;
+	.text-description-a{
+		font-size: 1.4em;
+		line-height: 1em;
 	}
-}
-
-
-
-/***********************************************************************************************/
-@media screen and (max-width: 64em) {
-	header{
-		height: 24em;
-		font-size: 0.7em;
+	.text-description-b{
+		font-size: 1em;
+		line-height: 1em;
 	}
-	.tex{
-		font-size: 1.3em;
+	.intel{
+		height: 40em;
+		justify-content: center;
+		padding: 0;
 	}
-	.conteiner .contenedor-principal {
-		align-items: center;
-		height: 12em;
+	.intel-container{
+		height: 10%;
 	}
-	.conteiner .contenedor-carousel{
-		height: inherit;
+	.intel-title{
+		font-size: 1.7em;
 	}
-	.contened{
-		height: 30em;
-		width: 80%;
+	.proposal-text{
 		display: flex;
-		flex-flow: column wrap;
-		justify-content: space-between;
-		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: 80%;
 	}
-
-	.contact-table1{
-		padding: 1em;
-		font-size: 1.2em;
+	.brother-text{
+		width: 15em;
+		height: 14em;
 	}
-	.contact-table1 p , .contact-table1 .h4{
-		border: 0;
-		margin: 0;
+	.curriculum-styles{
+		height: 50%;
+		width: 50%;
+	}
+	.title-footer{
+		font-size: 1.7em;
+		font-weight: bold;
+	}
+	.footer ul.card-footer li a {
+		font-size: 1em;
 	}
 	.men a{
-		padding: 1em;
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 }
 /***********************************************************************************************/
 
 @media screen and (max-width: 48em) {
 	header{
-		height: 20em;
+		height: 10em;
+	}
+	.text-title-page{
+		font-size: 2em;
 	}
 	.logo{
-		width: 8em;
-		height: 8em;
+		width: 7em;
+		height: 7em;
 	}
-	.element{
-		font-size: 2em;
-	}
-	.menu-link{
-		font-size: 2em;
-	}
-	.submenu{
-		position: absolute;
-	}
-	.conteiner .contenedor-principal {
-		align-items: center;
-		height: 9em;
-	}
-	.conteiner .contenedor-carousel{
-		height: inherit;
-	}
-	.text{
-		height: 30%;
-		width: 70%;
-	}
-	.tex{
-		font-size: 1.3em;
-	}
-	.video{
+	.company-description{
+		height: 28em;
 		width: 100%;
-		height: 70%;
 	}
-	.contact, .contact-table{
-		padding: 0;
+	.text-title-description{
+		font-size: 1.8em;
+	}
+	.text-description-a{
+		font-size: 1.2em;
+		line-height: 1em;
+	}
+	.text-description-b{
+		font-size: .9em;
+		line-height: 1em;
 	}
 	.intel{
-		height: 13em;
+		height: 30em;
+		width: 100%;
 	}
-	.tables .Marcas .brother-1{
-		width: 6em;
-		height: 6em;
-		margin: 8px;
+	.intel-container{
+		height: 10%;
 	}
-	.contact-table{
-		font-size: 1em;
+	.intel-title{
+		font-size: 1.8em;
 	}
-	.tables h4{
-		font-size: 3em;
+	.brother-text{
+		width: 12em;
+		height: 12em;
+		margin-bottom: 0.4em;
 	}
-	.tables p{
-		font-size: 1.5em;
-	}
-
-	.contact .contact-table h1{
-		font-size: 2em;
-	}
-	input[type=text]{
-		width: 9em;
-	}
-	input[type=email]{
-		width: 9em;
-	}
-	input[type=password]{
-		width: 9em;
-	}
-	.final-botton2{
-		font-size: .8em;
-	}
-	.panel{
-		position: fixed;
+	.brother-text-styles{
+	font-size: 0.8em;
 	}
 	.men a{
 		padding: 1.5em;
 		font-size: 1em;
 	}
+	.footer{
+		height: 11em;
+	}
+	.title-footer{
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	.footer ul.card-footer li a {
+		font-size: 0.8em;
+	}
 }
 /***********************************************************************************************/
 @media screen and (max-width: 37.5em) {
-	.head-box .logo{
-		width: 7em;
-		height: 7em;
-	}
 	header{
-		height: 15em;
+		height: 8em;
 	}
-	.element{
+	.text-title-page{
 		font-size: 1.5em;
 	}
-
-
-	.conteiner .contenedor-principal {
-		align-items: center;
-		height: 9em;
+	.head-box .logo{
+		width: 6.5em;
+		height: 6.5em;
 	}
-	.conteiner .contenedor-carousel{
-		height: inherit;
+	.company-description{
+		height: 30em;
+		padding: 0em;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
 	}
-	.contened .text1{
-		font-size: 1.3em;
+	.text{
+		font-size: 1.1em;
+		height: 45%;
+		width: 95%;
+		display: flex;
+		justify-content: start;
+	}
+	.image-description{
+		height: 50%;
+		width: 30%;
+	}
+	.text-title-description{
+		font-size: 1.1em;
+	}
+	.text-description-a{
+		font-size: 1em;
+	}
+	.text-description-b{
+		font-size: 0.8em;
+		width: 100%;
 	}
 	.intel{
-		height: 17em;
+		height: 27em;
 	}
-	.brother {
-		width: 40%;
-		height: 40%;
-		border-radius: 15px;
+	.intel-title{
+		font-size: 1.4em;
 	}
-	.contact-table1{
-		font-size:1em;
+	.brother-text{
+		width: 10em;
+		height: 10em;
+		margin-bottom: 0.4em;
 	}
+	.brother-text-styles{
+	font-size: 0.6em;
+	}
+	.card-footer{
+		padding: 0.1em;
+	}
+
+	.footer{
+		height: 11em;
+	}
+	.title-footer{
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	.footer ul.card-footer li a {
+		font-size: 0.8em;
+	}
+
 	input[type=text]{
-		width: 7em;
-	}
-	input[type=email]{
-		width: 7em;
-	}
-	input[type=password]{
-		width: 7em;
+		width: 4em;
 	}
 	.men a{
 		padding: 2em;
 		font-size: .8em;
-	}
-}
-/***********************************************************************************************/
-@media screen and (max-width: 30em) {
-	header{
-		height: 14em;
-	}
-	.head-box{
-		height: 60%;
-	}
-	.head-box .logo{
-		width: 6em;
-		height: 7em;
-	}
-	.element{
-		height: 40%;
-		font-size: 1em;
-	}
-
-	.conteiner .contenedor-principal {
-		align-items: center;
-		height: 4em;
-	}
-	.conteiner .contenedor-carousel{
-		height: inherit;
-	}
-	.conteiner .contenedor-principal .flecha-izquierda,
-	.conteiner .contenedor-principal .flecha-derecha {
-		height: 40%;
-		width: 10%;
-	}
-	.conteiner .contenedor-principal .flecha-izquierda:hover,
-	.conteiner .contenedor-principal .flecha-derecha:hover {
-		height: 50%;
-		width: 10%;
-	}
-
-	.contened .text1{
-		font-size: 2em;
-	}
-	.tex{
-		font-size: .6em;
-	}
-	.text-c{
-		font-size: .6em;
-	}
-	.contact{
-		font-size: .5em;
-	}
-	.contact .h4{
-		font-size: 1.4em;
-	}
-	.contact .contact-table2 h5{
-		font-size: 1.4em;
-	}
-	input[type=text]{
-		width: 7em;
-		height: 2em;
-	}
-	input[type=email]{
-		width: 7em;
-		height: 2em;
-	}
-	input[type=password]{
-		width: 8em;
-		height: 2em;
-	}
-	.men a{
-		padding: 3em;
-		font-size: .5em;
 	}
 }

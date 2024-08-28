@@ -1,17 +1,41 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MEX">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style12.css">
+    <link rel="stylesheet" href="../CSS/style12.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<link rel="shortcut icon" href="../favicon/man.ico">
-    <title>Paginas web</title>
+    <title>Proyectos</title>
   </head>
   <body>
-  <section class="father">
-    <div><a href="https://manuelgodel07.github.io/multicommexicana/"><img src="../images/MCM.jpeg" class="img-fluid" alt="Multicom Mexicana"></a></div>
-    <div><a href="https://yumyumdoodha.herokuapp.com"><img src="../images/LogoYumYumDoodha.png" class="img-fluid" alt="yumyumdoodha"></a></div>
-  </section>
+    <header>
+			<section class="head-box">
+        <div class="title-page">Projectos</div>
+        <div>
+          <img class="handle-screen-img" src="https://firebasestorage.googleapis.com/v0/b/blulogin-1e137.appspot.com/o/web%2FdayNight.jpg?alt=media&token=eb70de61-df4f-46fa-b4bc-e3f6b9021af0" onclick="sweacherImageStyles()">
+        </div>
+      </section>
+    </header>
+      <section class="father">
+        <div>
+          <p>Bienvenido, escribe tu nombre despues dale click al botón de enviar</p>
+          <input type="text" id="textInput" value="">  
+        </div>
+        <div>
+          <a href="calculator.html"><img src="https://firebasestorage.googleapis.com/v0/b/blulogin-1e137.appspot.com/o/web%2Fcalculadora.png?alt=media&token=3498901f-16b1-4f3a-9de8-43375eabb596" class="img-cal" alt="Calculadora"></a>          
+          <a href="https://play.google.com/store/apps/details?id=com.manuelruiz117.testa" rel="noopener" target="_blank" id="ligulink"><img src="https://firebasestorage.googleapis.com/v0/b/blulogin-1e137.appspot.com/o/icon.png?alt=media&token=555da3c8-ef1b-47d7-b600-8248d38b5903" class="img-lingu" alt="LinguTalk"></a>
+        </div>
+        <div>
+          <a href="rickAndMortyApp.html"><img src="https://rickandmortyapi.com/api/character/avatar/558.jpeg" class="img-rick" alt="RickApp"></a>
+        </div>
+      </section>
+    <div id="projectResponses"></div>
+    <div id="react-component">
+      <button id="event-multiple-handler">Enviar</button>
+      
+  </div>
+
+    <script src="../js/proyectos.js"></script>
   </body>
 </html>

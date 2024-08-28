@@ -300,7 +300,8 @@ $cards.replaceChild($newCard,$cards.children[2])
 $cards.insertBefore($newCard, $cards.lastElementChild)
 $cards.removeChild($cards.firstElementChild)
 **/
-/***cool style
+
+/* cool style
  *  .insertAdjacent
  * .insertAdjacentElement(posicion,el)
  * .insertAdjacentHMTL(posicion,html)
@@ -323,8 +324,8 @@ let $contenCard = `
 $newCard.classList.add("card");
 $newCard.insertAdjacentHTML("beforeend",$contenCard);
 $newCard.querySelector("figcaption").insertAdjacentText("afterend","Nuevo")
-$cards.insertAdjacentElement("beforebegin",$newCard);
- */
+$cards.insertAdjacentElement("beforebegin",$newCard); */
+
 
 /**Manejadores de eventos 
 
