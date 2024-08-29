@@ -45,6 +45,10 @@ body{
 	background-color: #ffffff;
     cursor:auto
 }
+
+.active{
+    background-color: var(--yellow-color);
+}
 .new-background{
     background-color: var(--blue-color);
 }
@@ -78,7 +82,9 @@ body{
 .start-button-animation {
     animation: girar 2s linear 1;
 }
-
+.rick-cards-text{
+    font-weight: bold;
+}
 .start-button-text {
     position: absolute;
     top: 50%;
@@ -106,7 +112,12 @@ body{
     border-top-right-radius: 50px;
     height: 70%;
 }
-
+.page-btn{
+    margin: .5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 15%;
+}
 .rick-cards-container{
     display: flex;
     flex-direction: row;
@@ -114,3 +125,49 @@ body{
     justify-content: space-around;
 }
 
+@media screen and (max-width: 85rem) {
+    .new-background{
+        background-color: #e40b0b;
+    }
+    .rick-cards-text{
+        font-size: .8rem;
+        margin: .5rem;
+    }
+}
+
+
+@media screen and (max-width: 60em) {
+    .new-background{
+        background-color: #4bc027;
+    }
+    .rick-cards{
+        border-radius: 50px;
+    }
+    .rick-cards-text{
+        font-size: .6rem;
+        margin: .3rem;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .new-background{
+        background-color: #4de7f1;
+    }
+    .rick-cards{
+        border-radius: 35px;
+    }
+    .rick-cards-text{
+        font-size: .5rem;
+        margin:0px;
+    }
+    .image-card{
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+    }
+    .page-btn{
+        margin: .5rem;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 15%;
+    }
+}

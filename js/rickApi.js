@@ -12,6 +12,7 @@ const widthScreen = window.innerWidth,
     const hora = Date();
     let currentPage = 1;
     const itemsPerPage = 20;
+
     $opener.addEventListener("click",() => {
         $opener.classList.add("start-button-animation");
         $opener.addEventListener("animationend",()=>{
@@ -29,7 +30,6 @@ const widthScreen = window.innerWidth,
                     allCharacters = allCharacters.concat(data.results);
                     url = data.info.next; 
                 }
-                console.log("R.-",allCharacters)
                 return allCharacters;
             }
 
@@ -46,25 +46,22 @@ const widthScreen = window.innerWidth,
                         $newText = document.createElement("p"),
                         $newTextSub = document.createElement("p"),
                         $characterImage = document.createElement('img');
-
-                    $characterImage.setAttribute("src", image);
-                    $characterImage.classList.add("image-card");
-                    $newText.textContent = `My name is ${name}`;
-                    $newTextSub.textContent = `I'm ${species} and ${status}`;
-                    $newText.style.fontWeight = 'bold';
-                    $newTextSub.style.fontWeight = 'bold';
-            
-                    $characterContainer.insertAdjacentElement("afterbegin", $characterImage);
-                    $characterContainer.appendChild($newText);
-                    $characterContainer.appendChild($newTextSub);
-
-                    $characterContainer.classList.add("rick-cards");
-                    $fragment.appendChild($characterContainer);
-                });
+                        $characterImage.setAttribute("src", image);
+                        $characterImage.classList.add("image-card");
+                        $newText.textContent = `My name is ${name}`;
+                        $newTextSub.textContent = `I'm ${species} and ${status}`;
+                        $newText.classList.add('rick-cards-text');
+                        $newTextSub.classList.add('rick-cards-text');
+                        $characterContainer.insertAdjacentElement("afterbegin", $characterImage);
+                        $characterContainer.appendChild($newText);
+                        $characterContainer.appendChild($newTextSub);
+                        $characterContainer.classList.add("rick-cards");
+                        $fragment.appendChild($characterContainer);
+                    });
                 $cursorBlock.classList.add("rick-cards-container");
                 $cursorBlock.appendChild($fragment);
             }
-            
+
             function updatePagination(characters) {
                 const totalPages = Math.ceil(characters.length / itemsPerPage);
                 const $btnContainer = document.createElement('div');
@@ -76,7 +73,7 @@ const widthScreen = window.innerWidth,
                     
                     $pageBtn.addEventListener('click', () => {
                         currentPage = i;
-                        updatePagination(characters);
+                        $pageBtn.classList.toggle('active')
                         displayCharacters(characters, currentPage);
                     });
                     $btnContainer.insertAdjacentElement("beforeend",$pageBtn);
